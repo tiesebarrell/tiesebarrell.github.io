@@ -20,4 +20,12 @@
     <!-- RSS -->
   	<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
   	
+  	<script type="text/javascript">
+		var site = "{{ site.url }}";
+
+		function googleSiteSearch(scope) {
+			scope.q.value = scope.q.value + " site:" + site;
+		}
+	</script>
+  	
  </head>
