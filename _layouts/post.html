@@ -5,20 +5,71 @@
 
 	<body>
 
-		<div class="content container">
+		<div class="content container post">
 		
 			{% include header.html %}
 		
-			<h1>{{ page.title }}</h1>
-		
-		{{ content }}
-		
-			<div>
-				Posted at {{page.date}} with tags {{page.tags}}
+			<div class="row">
+				<div class="col-md-12">
+					<h1>{{ page.title }}</h1>
+				</div>
 			</div>
 			
-			<div>
-				<a href="{{page.url}}" >Permalink</a>
+			<div class="row">
+				<div class="col-md-12">
+					<p class="smaller">
+						Posted {{page.date | date_to_long_string }}
+					</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-7">
+					{{ content }}
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+					    	<h3 class="panel-title">This post</h3>
+					  	</div>
+					  	<div class="panel-body">
+					    	<div class="row">
+								<div class="col-md-12">
+									<span class="glyphicon glyphicon-tags">&nbsp;</span> 
+									{% for tag in page.tags %}
+										<a href="/tag/{{tag}}.html" title="Posts with tag {{tag}}">{{tag}}</a>&nbsp;
+									{% endfor %}
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-12">
+									<span class="glyphicon glyphicon-link">&nbsp;</span>
+									<a href="{{page.url}}">Permalink to this post</a>
+								</div>
+							</div>
+							
+							{% if page.links %}
+							<hr />
+							
+							<div class="row">
+								<div class="col-md-12">
+									<h4><span class="glyphicon glyphicon-link">&nbsp;</span>Related links</h4>
+									<ul>
+									{% for link in page.links %}
+										<li>
+											<a href="{{link.link}}">{{ link.name }}</a>
+										</li>
+									{% endfor %}
+									</ul>
+								</div>
+							</div>
+							{% endif %}
+					  	</div>
+					</div>
+				</div>
 			</div>
 			
 			{% include footer.html %}

@@ -1,15 +1,51 @@
 ---
 layout: default
-title: Home
+title: Tiese's Scribbles
 ---
 
-Hello, World! Musings
+<div class="row">
+	<div class="col-md-12">
+		<div class="jumbotron index">
+  			<h1><img src="/assets/images/airquill-icon.png"/>&nbsp;{{ site.name }}</h1>
+  			<p>{{ site.tagline }}</p>
+  			<p>
+  				<a class="btn btn-primary" href="#recent-posts">
+  					<span class="glyphicon glyphicon-chevron-down"></span>
+  					Recent posts
+  				</a>
+  				<a class="btn btn-primary" href="posts.html">
+  					<span class="glyphicon glyphicon-list"></span>
+  					More posts
+  				</a>
+  			</p>
+		</div>
+	</div>
+</div>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+<div class="row">
+	<div class="col-md-12">
+		<a id="recent-posts" />
+		<h1>Recent posts</h1>
+	</div>
+</div>
+
+{% for post in site.posts limit:5 %}
+<div class="row">
+    <div class="col-md-12">
+    	<h2>
+      		<a href="{{ post.url }}">{{ post.title }}</a>
+     	</h2>
+     	{{ post.excerpt }}
+    </div>
+</div>
+<div class="row">
+	<div class="col-md-6 small">
+    	Posted {{ post.date | date_to_long_string }}
+    </div>
+    <div class="col-md-6 small">
+    	<p class="pull-right">
+    		<a href="{{ post.url }}"><span class="glyphicon glyphicon-log-out">&nbsp;</span>Read more</a>
+    	</p>
+    </div>
+</div>
+{% endfor %}

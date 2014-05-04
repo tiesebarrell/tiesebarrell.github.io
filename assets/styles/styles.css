@@ -1,3 +1,20 @@
 body {
 	font-size: 18px;
 }
+
+.jumbotron h1,
+.jumbotron p {
+	color: black;
+}
+
+.jumbotron p {
+	color: white;
+}
+
+.jumbotron.index {
+	background-image: url('/assets/images/himmelbjerget.jpg');
+}
+
+.container.post p {
+	text-align: justify;
+}
