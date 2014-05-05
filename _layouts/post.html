@@ -56,7 +56,9 @@
 							
 							<div class="row">
 								<div class="col-md-12">
-									<h4><span class="glyphicon glyphicon-link">&nbsp;</span>Related links</h4>
+									<h4>
+										<span class="glyphicon glyphicon-link">&nbsp;</span>Related links
+									</h4>
 									<ul>
 									{% for link in page.links %}
 										<li>
@@ -67,6 +69,24 @@
 								</div>
 							</div>
 							{% endif %}
+							
+							<hr />
+							<h4>
+								<span class="glyphicon glyphicon-comment">&nbsp;</span>Share this post
+							</h4>
+							
+							<ul>
+								<li>
+									<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url}}{{ page.url }}&amp;title={{ page.title }}&amp;summary=Put your summary here" target="_blank">Share on LinkedIn</a><br />
+								</li>
+								<li>
+									<a href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}" target="_blank">Share on Twitter</a>
+								</li>
+								<li>
+									<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}">Share on Google+</a>
+								</li>
+							</ul>
+							
 					  	</div>
 					</div>
 				</div>

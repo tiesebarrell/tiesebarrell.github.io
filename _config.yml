@@ -2,9 +2,8 @@ safe: true
 url: http://tiesebarrell.github.io
 name: AirQuill
 tagline:  Presumptuous tagline goes here
-author: 
- - name: Tiese Barrell
- - email: info@mazidea.com
+authorName: Tiese Barrell
+authorEmail: info@mazidea.com
 gems:
  - jekyll-mentions
  - jemoji
