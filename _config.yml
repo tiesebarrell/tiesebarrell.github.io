@@ -1,5 +1,5 @@
 safe: true
-pygments: true
+highlighter: pygments
 url: http://tiesebarrell.github.io
 name: AirQuill
 tagline:  Presumptuous tagline goes here
