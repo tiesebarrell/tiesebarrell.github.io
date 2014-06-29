@@ -40,7 +40,7 @@ title: Tiese's Scribbles
 </div>
 <div class="row">
 	<div class="col-md-6 small">
-    	Posted {{ post.date | date_to_long_string }}
+    	Posted {{ post.date | date_to_long_string }} in {{ post.tags | array_to_sentence_string }}
     </div>
     <div class="col-md-6 small">
     	<p class="pull-right">
