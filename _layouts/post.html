@@ -5,10 +5,10 @@
 
 	<body>
 
-		<div class="content container post">
-		
-			{% include header.html %}
-		
+		{% include header.html %}
+
+		<div class="container page-header">
+
 			<div class="row">
 				<div class="col-md-12">
 					<h1>{{ page.title }}</h1>
@@ -17,81 +17,112 @@
 			
 			<div class="row">
 				<div class="col-md-12">
-					<p class="smaller">
-						Posted {{page.date | date_to_long_string }} {% if page.location %} | {{ page.location }} {% endif %} | {{ page.content | number_of_words }} words
+					<p class="small">
+						Posted {{page.date | date_to_long_string }} {% if page.location %} | <i class="fa fa-map-marker">&nbsp;</i>{{ page.location }} {% endif %} | {{ page.content | number_of_words }} words
 					</p>
 				</div>
 			</div>
 			
 			<div class="row">
 				<div class="col-md-7">
-					{{ content }}
+
+					<section class="post-content">
+						{{ content }}
+					</section>
+
+					<div class="panel panel-primary">
+  						<div class="panel-body profile">
+							<div class="row">
+  								<div class="col-md-7">
+									<div class="media">
+  										<a class="pull-left" href="/about.html">
+    										<img class="media-object profile" src="/assets/images/profile-picture.jpg" alt="Tiese Barrell" />
+  										</a>
+  										<div class="media-body profile">
+  											<h4 class="media-heading">Tiese Barrell</h4>
+  											<p>I should write something funny here.</p>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="col-md-1">
+  								</div>
+  								<div class="col-md-4 profile-links">
+  									<a class="profile" href="https://twitter.com/tiesebarrell">
+  										<i class="fa fa-twitter"></i>
+  									</a>
+  									&nbsp;
+  									<a class="profile" href="http://mazidea.com">
+  										<i class="fa fa-globe"></i>
+  									</a>
+  								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 				<div class="col-md-1">
 				</div>
 				<div class="col-md-4">
 					<div class="panel panel-primary">
-						<div class="panel-heading">
-					    	<h3 class="panel-title">This post</h3>
-					  	</div>
 					  	<div class="panel-body">
 					    	<div class="row">
 								<div class="col-md-12">
-									<span class="glyphicon glyphicon-tags">&nbsp;</span> 
+									<h4>
+										<i class="fa fa-tags">&nbsp;</i>Tags
+									</h4>
 									{% for tag in page.tags %}
 										<a href="/tag/{{tag}}.html" title="Posts with tag {{tag}}">{{tag}}</a>&nbsp;
 									{% endfor %}
 								</div>
 							</div>
-							
-							<div class="row">
-								<div class="col-md-12">
-									<span class="glyphicon glyphicon-link">&nbsp;</span>
-									<a href="{{page.url}}">Permalink to this post</a>
-								</div>
-							</div>
-							
-							{% if page.links %}
+
 							<hr />
 							
 							<div class="row">
 								<div class="col-md-12">
 									<h4>
-										<span class="glyphicon glyphicon-link">&nbsp;</span>Related links
+										<i class="fa fa-cloud">&nbsp;</i>Links
 									</h4>
 									<ul>
-									{% for link in page.links %}
 										<li>
-											<a href="{{link.link}}">{{ link.name }}</a>
+											<a href="{{page.url}}">Permalink to this post</a>
 										</li>
-									{% endfor %}
-									</ul>
+									{% if page.links %}
+										{% for link in page.links %}
+											<li>
+												<a href="{{link.link}}">{{ link.name }}</a>
+											</li>
+										{% endfor %}
+									{% endif %}
 								</div>
 							</div>
-							{% endif %}
 							
 							<hr />
-							<h4>
-								<span class="glyphicon glyphicon-comment">&nbsp;</span>Share this post
-							</h4>
-							
-							<ul>
-								<li>
-									<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url}}{{ page.url }}&amp;title={{ page.title }}&amp;summary=Put your summary here" target="_blank">Share on LinkedIn</a><br />
-								</li>
-								<li>
-									<a href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}" target="_blank">Share on Twitter</a>
-								</li>
-								<li>
-									<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}">Share on Google+</a>
-								</li>
-							</ul>
-							
+
+							<div class="row">
+								<div class="col-md-12">
+									<h4>
+										<i class="fa fa-share-alt">&nbsp;</i>Share
+									</h4>
+
+									<div class="btn-group btn-group-justified">
+										<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url}}{{ page.url }}&amp;title={{ page.title }}&amp;summary=Put your summary here" target="_blank" class="btn btn-primary btn-block">
+											<i class="fa fa-linkedin">&nbsp;</i>
+										</a>
+										<a href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}" target="_blank" class="btn btn-primary btn-block">
+											<i class="fa fa-twitter">&nbsp;</i>
+										</a>
+										<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank" class="btn btn-primary btn-block">
+											<i class="fa fa-google-plus">&nbsp;</i>
+										</a>
+									</div>
+								</div>
+							</div>
 					  	</div>
 					</div>
 				</div>
 			</div>
-			
+
 			{% include footer.html %}
 		
 		</div>
