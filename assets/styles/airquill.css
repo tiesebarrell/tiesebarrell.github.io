@@ -19,6 +19,10 @@ section.post-content p {
 	margin-bottom: 32px;
 }
 
+section.post-content blockquote p {
+	margin-bottom: 0px;
+}
+
 div.panel-body.profile {
 	vertical-align: middle;
 }
