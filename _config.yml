@@ -6,7 +6,6 @@ tagline:  Presumptuous tagline goes here
 authorName: Tiese Barrell
 authorEmail: info@mazidea.com
 gems:
- - jekyll-mentions
  - jemoji
  - jekyll-redirect-from
  - jekyll-sitemap
