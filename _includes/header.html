@@ -23,31 +23,20 @@
 		          			</a>
 		          		</li>
 		          		<li class="divider"></li>
-		          		<li>
-		          			<a href="/tag/activiti.html">
-		          				Activiti
-		          			</a>
-		          		</li>
-		          		<li>
-		          			<a href="/tag/architecture.html">
-		          				Architecture
-		          			</a>
-		          		</li>
-		          		<li>
-		          			<a href="/tag/bpm.html">
-		          				<abbr title="Business Process Management">BPM</abbr>
-		          			</a>
-		          		</li>
-		          		<li>
-		          			<a href="/tag/mockito.html">
-		          				Mockito
-		          			</a>
-		          		</li>
-		          		<li>
-		          			<a href="/tag/oss.html">
-		          				<abbr title="Open Source Software">OSS</abbr>
-		          			</a>
-		          		</li>
+		          		{% for currentTag in site.tags %}
+						  	{% assign currentTagPlain = currentTag[0] %}
+						  	<li>
+						    	<a href="/tag/{{currentTagPlain}}.html">
+						    		{% if site.data.tags[currentTagPlain][0].abbr %}
+						    		<abbr title="{{site.data.tags[currentTagPlain][0].abbr}}">
+						    			{{site.data.tags[currentTagPlain][0].name}}	
+						    		</abbr>
+						    		{% else %}
+						    			{{site.data.tags[currentTagPlain][0].name}}
+						    		{% endif %}
+						    	</a>
+						  	</li>
+						{% endfor %}
 		        	</ul>
 		      	</li>
 		      	<li>

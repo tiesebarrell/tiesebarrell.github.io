@@ -11,33 +11,33 @@
 		
 			<div class="row">
 				<div class="col-md-12">
-					<h1>{{ page.title }}</h1>
+					<h1>{{site.data.tags[page.tag][0].name}} Posts</h1>
 				</div>
 			</div>
 			
 			<div class="row">
 				<div class="col-md-8">
-					{{ content }}
+					{% assign postsByTag = site.tags[page.tag] %}
+					{% include postlist.html posts=postsByTag %}
 				</div>
 				<div class="col-md-4">
 					<h2>Posts by tag</h2>
 					<ul class="list-group">
-					  <li class="list-group-item">
-					    <span class="badge">{{ site.tags.activiti | size }}</span>
-					    <a href="/tag/activiti.html">Activiti</a>
-					  </li>
-					  <li class="list-group-item">
-					    <span class="badge">{{ site.tags.architecture | size }}</span>
-					    <a href="/tag/architecture.html">Architecture</a>
-					  </li>
-					  <li class="list-group-item">
-					    <span class="badge">{{ site.tags.bpm | size }}</span>
-					    <a href="/tag/bpm.html"><abbr title="Business Process Management">BPM</abbr></a>
-					  </li>
-					  <li class="list-group-item">
-					    <span class="badge">{{ site.tags.oss | size }}</span>
-					    <a href="/tag/oss.html"><abbr title="Open Source Software">OSS</abbr></a>
-					  </li>
+					{% for currentTag in site.tags | sort %}
+					  	{% assign currentTagPlain = currentTag[0] %}
+					  	<li class="list-group-item">
+					    	<span class="badge">{{ site.tags[currentTagPlain] | size }}</span>
+					    	<a href="/tag/{{currentTagPlain}}.html">
+					    		{% if site.data.tags[currentTagPlain][0].abbr %}
+					    		<abbr title="{{site.data.tags[currentTagPlain][0].abbr}}">
+					    			{{site.data.tags[currentTagPlain][0].name}}	
+					    		</abbr>
+					    		{% else %}
+					    			{{site.data.tags[currentTagPlain][0].name}}
+					    		{% endif %}
+					    	</a>
+					  	</li>
+					{% endfor %}
 					</ul>
 				</div>
 			</div>

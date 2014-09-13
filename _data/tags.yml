@@ -1,0 +1,16 @@
+activiti:
+ - name: Activiti
+architecture: 
+ - name: Architecture
+bpm:
+ - name: BPM
+   abbr: Business Process Management
+oss:
+ - name: OSS
+   abbr: Open Source Software
+misc:
+ - name: Miscellaneous
+mockito:
+ - name: Mockito
+tech:
+ - name: Technology

@@ -1,13 +1,4 @@
 ---
 layout: posts
-title: Activiti Posts
+tag: activiti
 ---
-
-{% for post in site.tags.activiti %}
-<div class="row">
-	<div class="col-md-12">
-		{{ post.date | date_to_long_string}}&nbsp;
-		<a href="{{ post.url }}">{{ post.title }}</a>
-	</div>
-</div>
-{% endfor %}
