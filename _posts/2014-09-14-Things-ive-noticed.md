@@ -13,3 +13,4 @@ Here are some things I've noticed.
 * I find myself more and more often realizing: "I used to know that. In highschool." Which, most times, is followed by: "Meh."
 * Inputting pretty much any text on an iPad sucks. The keyboard is, somehow, unusable to me. Let alone trying to correct anything with that ridiculous tap and hold gesture. Oh, which also applies to Android. Different gesture. Still sucks.
 * People who design packaging obviously don't try to open them themselves. They should be required, by law. Then they would find out how badly they botched it. After cutting three fingers, overstrechting a wrist and twisting their ankle while desperately looking for a hammer in the basement.
+* The one time a year a paper tissue ends up in the washing machine, it's always when you're washing dark clothes.
