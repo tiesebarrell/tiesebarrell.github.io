@@ -9,6 +9,9 @@ location: Heerlen
 excerpt: Your process engine [may not need your data](../../../2014/06/29/Storing-data-in-processes.html), but the orchestration it's performing might.
 tldr: Some data is only available in your process because the orchestration has taken place. This includes information that was taken into account while performing the execution and has no history and therefore cannot be retrieved in retrospect. In such cases the data should be stored in the process engine's data storage.
 ---
+
+![Conducting the orchestration][conductors-baton]   
+
 In an [an earlier blogpost][storing-data-in-processes], I made the case for storing as little information in the datastore of your process engine as you can possibly get away with. In summary, there are three main kinds of information that warrant storage in the engine:
 
 * **Identifying data**: data that uniquely identifies the data being handled in a case by referring to the data, which itself is stored elsewhere. Typically, if you think of a process definition as a blueprint for the process and process instances (cases) as occurrences of that blueprint, it's exactly the identifying data that distinguishes one process instance from the other.
@@ -43,3 +46,4 @@ Some data is simply only available because there is an orchestration of a proces
 
 
 [storing-data-in-processes]: ../../../2014/06/29/Storing-data-in-processes.html "Storing data in automated business processes"
+[conductors-baton]: ../../../assets/images/posts/conductors-baton.jpg  "Conducting the orchestration"

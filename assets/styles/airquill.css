@@ -70,3 +70,6 @@ a.profile i {
 .footer-link:hover {
 	text-decoration: none;
 }
+
+.post-content img {
+	max-width: 100%;

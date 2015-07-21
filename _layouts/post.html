@@ -28,26 +28,11 @@
 
 					<section class="post-content">
 
-						{% if page.tldr %}
-						<div class="row">
-							<div class="col-md-11">
-								<p class="lead tldr">
-									{{page.excerpt | markdownify }}
-								</p>
-							</div>
-							<div class="col-md-1">
-								<a href="#tldr" class="btn btn-warning">
-									<i class="fa fa-coffee">&nbsp;</i>TL;DR
-								</a>
-							</div>
-						</div>
-						{% endif %}
-
 						{{ content }}
 
 						{% if page.tldr %}
 						<a id="tldr"></a>
-						<div class="panel panel-warning">
+						<div class="panel panel-primary">
   							<div class="panel-heading">
     							<h3 class="panel-title"><i class="fa fa-coffee">&nbsp;</i>TL;DR</h3>
   							</div>
@@ -93,6 +78,27 @@
 				<div class="col-md-4">
 					<div class="panel panel-primary">
 					  	<div class="panel-body">
+							{% if page.tldr %}
+							<div class="row">
+								<div class="col-md-12">
+									<h4>
+										<i class="fa fa-coffee">&nbsp;</i>TL;DR
+									</h4>
+
+									{{page.excerpt | markdownify }}
+
+									<p>
+										<a href="#tldr" class="">
+											<i class="fa fa-coffee">&nbsp;</i>TL;DR
+										</a>
+									</p>
+								</div>
+							</div>
+
+							<hr />
+
+							{% endif %}
+
 					    	<div class="row">
 								<div class="col-md-12">
 									<h4>
