@@ -1,0 +1,9 @@
+{
+  "name": "tiesebarrell.github.io",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.3.0"
+  },
+  "private": true
+}

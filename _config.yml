@@ -1,12 +1,15 @@
-safe: true
-highlighter: pygments
 url: http://airquill.io
 name: AirQuill
-tagline:  Presumptuous tagline goes here
 authorName: Tiese Barrell
 authorEmail: info@mazidea.com
+
+markdown: kramdown
+highlighter: pygments
+
+safe: true
 gems:
  - jemoji
  - jekyll-redirect-from
  - jekyll-sitemap
-markdown: kramdown
+
+tagline:  Presumptuous tagline goes here
