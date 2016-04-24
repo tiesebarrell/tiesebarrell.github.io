@@ -1,5 +1,7 @@
 activiti:
  - name: Activiti
+agile:
+ - name: Agile
 architecture: 
  - name: Architecture
 bpm:

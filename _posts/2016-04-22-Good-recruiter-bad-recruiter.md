@@ -5,6 +5,8 @@ tags: [misc]
 location: "Heerlen"
 excerpt: "When a recruiter contacts you, the expectation is for you to feel flattered. But should you really be? A look at some of the habits of bad recruiters."
 ---
+![Recruitment][word-cloud-recruitment]
+
 Working in IT seems to be an automatic magnet to recruiters. Which is a good thing, because that generally means you're working in a field where there's a shortage of supply to fulfill demand. So you should feel flattered. Or should you? Here are some of the poor habits of recruiters I've encountered. Because... well, it's fun to point out where others could improve :)
 
 * Bad recruiter starts a cold sales pitch with "I'm sorry to approach you directly, but...". Bad recruiter is really not sorry at all. Au contraire, mon ami. Looking for a pretty poor way to start a new relationship? Pro tip: make sure your first two words are a lie. Rock-solid way to get the trust-building going.
@@ -16,3 +18,5 @@ Working in IT seems to be an automatic magnet to recruiters. Which is a good thi
 * Bad recruiter makes an effort to come across as personal by sharing details about the last weekend trip to [tourist location goes here], little Johnny's accomplishments as a promising soccer *wunderkind* and, believe it or not, the *weather* as of late (who doesn't love the budding of Spring?). As it turns out, Bad recruiter sent the exact same personal message to at least 3 of your closest colleagues and is actually just buttering you up to read the new offers that have no relevance to your previously discussed preferences.
 
 I'm thinking there's still a whole lot of market share out there for *Good Recruiter* to do business. Please give me a call.
+
+[word-cloud-recruitment]: ../../../assets/images/posts/word-cloud-recruitment.jpg  "Recruitment"

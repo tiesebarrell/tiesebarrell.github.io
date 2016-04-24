@@ -4,7 +4,7 @@ authorName: Tiese Barrell
 authorEmail: info@mazidea.com
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 safe: true
 gems:
