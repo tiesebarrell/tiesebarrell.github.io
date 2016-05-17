@@ -13,7 +13,7 @@ tldr: "I don't believe engineers despise agile, but generally appreciate what it
 
 I recently read the post [Why Engineers Despise Agile][why-engineers-despise-agile]. It contains a lot of valid points about agile, none of which however have made [*this* engineer][about] come to despise agile. Let me explain why by going through the categories mentioned in the article: control, manipulation, monitoring, technology and teamwork.
 
-##Control
+## Control
 I have little to add to this aspect, although I don't see that increased surveillance is a neccessary outcome of not empowering teams in a control-oriented organization. The cases I've witnessed are far more characterized by a complete lack of interest in creating a learning organization by giving teams more responsibility and autonomy. Which in practice means management takes more of an approach best summarized as: "Sure, you software guys go do your agile thing over there. As long as you deliver on time, full scope at the estimated project cost". Agile becomes an effort within just the team and management continues to excert control in exactly the same manner they've always done, because that enables them to keep telling each other they're doing their jobs and everything is running smoothly.
 
 ##Manipulation
