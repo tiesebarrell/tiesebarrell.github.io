@@ -16,12 +16,12 @@ I recently read the post [Why Engineers Despise Agile][why-engineers-despise-agi
 ## Control
 I have little to add to this aspect, although I don't see that increased surveillance is a neccessary outcome of not empowering teams in a control-oriented organization. The cases I've witnessed are far more characterized by a complete lack of interest in creating a learning organization by giving teams more responsibility and autonomy. Which in practice means management takes more of an approach best summarized as: "Sure, you software guys go do your agile thing over there. As long as you deliver on time, full scope at the estimated project cost". Agile becomes an effort within just the team and management continues to excert control in exactly the same manner they've always done, because that enables them to keep telling each other they're doing their jobs and everything is running smoothly.
 
-##Manipulation
+## Manipulation
 The reasoning here is that, by applying a seemingly simple set of rules to the way work is done, but losing the value of those rules in the process creates the perception that the approach is yet another management fad. I would agree that many attempts to implement agile suffer from ritual-weariness: the feeling that seeps in after a couple of unsuccessful sprints that the team is just going through the motions but is unable to improve and become more predictable. There is no rhythm to be found as advertised. However, I've seldom seen this weariness arise as the result of somebody outside the team dictating rules to live by. 
 
 In most cases, the team wanted this way of working for themselves, but they struggle at implementing it and reaping the benefits they've heard about that are supposed to come from it. There are all sorts of reasons for struggling, such as not actually thinking of planning in an agile way, not attending properly to refining the product backlog in time or the inability to see ways to "slice" work into small enough chunks to have stories that can be completed with a reasonable amount of effort. Management dictating following a restrictive set of rules that limit the team's potential to deliver? Nope, never seen it.
 
-##Monitoring
+## Monitoring
 > Agile mechanics are adopted whenever beneficial, but the culture itself is not changed.
 
 This pretty much proves the point that the problem is not in the method, but the way it is implemented. If you want to implement agile, first ask yourself why. What do you hope to accomplish? The culture is a natural part that might need changing. The need for more agility should be supported by a business' desire to get functionality delivered with more flexibility, interaction and predictability. I'm not arguing that business owners or management are often late to the game and many agile initiatives start bottom-up from teams wanting to work this way, but that doesn't mean a more comprehensive approach isn't required at some point to make it really work. It's like a business behemoth starting a "we do lean startups too" initiative where it takes a solid business plan and year-and-a-half approval process to start testing some ideas. Anything you don't *enable* to work, will not. Agile is no exception - why would it be?
@@ -44,7 +44,7 @@ Really? Non-technical people typically run as soon as "tech" comes up. In my exp
 
 Again, this is an organizational problem. If management is strong-arming a development team to commit to work they have no control over delivering, there's an issue with the way you're delegating work. No way of working is going to protect the team in that case. If anything, agile's open information is at least going to make it painfully transparent how disfunctional the operation is.
 
-##Technology
+## Technology
 
 > Agile fails to deliver–as promised by the Agile Manifesto–an engineering driven development. Decisions are still business-driven, made by people without an understanding of technology.
 
@@ -52,7 +52,7 @@ Well sure they are. As they should be. If you're the type of engineer that think
 
 On the point of technical debt, this again has little to do with agile. Focussing on delivering functionality each sprint definitely challenges a team to tackle technical debt. You will have technical debt with almost any approach. Part of the challenge of being a creative engineer is finding a way to control it. With short iterations, that means controlling it more often - exactly the way you slice user stories into smaller chunks of work. You should be reducing technical debt in each and every sprint. Which means you can fit in less functionality. That's why if you're really focussed on quality, it's in the definition of done that technical debt is either solved or planned. Address it and plan for it. It's part of the work that needs to be done.
 
-##Teamwork
+## Teamwork
 
 > There is no room for the individual in Agile. It does not respect seniority and personal growth of the individual engineer, as there are no longer tech leads.
 
@@ -62,7 +62,7 @@ You are not turned into a "replaceable cog in the machinery" if you don't want t
 
 I love being in a team. I'm not interested in everything technical that comes by - there may be someone else taking up one part while I focus on other things, technical or otherwise. It's a team effort. I want to learn about the business my work is meant to support. I want to get involved and participate in "rituals" that help us first get work done, then learn from each other and finally improve along the way. It also gets me unglued from the screen every once in a while, which is not just good for me, but also helps to have a fresh look at challenges.
 
-##Conclusion
+## Conclusion
 [The article][why-engineers-despise-agile] points to a lot of valid, common problems when implementing agile. But many engineers I know don't despise the methodology because of the problems encountered while implementing it. 
 
 I remember the phrase: "It simple to understand, but extremely hard to do". I believe many engineers see through the failed attempts and don't blame the method for the mistakes people make while trying to use it. 
