@@ -18,7 +18,7 @@ In an [an earlier blogpost][storing-data-in-processes], I made the case for stor
 * **Control data**: data that is required in order to perform the orchestration. This includes decisions, variation flags, and data derived during the process that is stored to prevent having to perform the same derivation multiple times. Control data is data that influences the *flow* of the process instance.
 * **Orchestration data**: data that, again, is required to perform the orchestration. As opposed to control data, this normally refers to data that only exists because there is an orchestration in the first place. Examples include data that is stored to be used in subsequent steps of the process or is never needed in other storage outside the engine.
 
-##Example: Negotiating a car sale
+## Example: Negotiating a car sale
 
 Orchestration data is best explained using an example. If you consider business processes that are long-running by nature, or even those where milliseconds count, time becomes an important factor in orchestration. Consider negotiating a car sale:
 
@@ -33,7 +33,7 @@ In this example, time matters because the sales representative initially wasn't 
 
 In a more general sense, this illustrates exactly what is meant by orchestration data: data that only exists because we are performing an automated orchestration. It may be important to know at some point in the process that other information was considered at an earlier point in the same process. That data then needs to be available, but only pertains to the orchestration at hand. Let's look at another example.
 
-##Example: Making credit card offerings
+## Example: Making credit card offerings
 
 Imagine a credit card service that offers you a credit card with a limit based purely on your credit rating. You request a credit card in May and you receive an offer based on your credit rating at that moment. While you consider the offer, you decide that this is quite a good deal and you won't need your other cards any more, so you cancel them during the Summer holidays. You then apply for the new credit card by taking up the offer in August. At the credit card service, they will perform a new calculation. It turns out your rating has since increased and they can offer you a higher limit.
 
@@ -41,7 +41,7 @@ The only way to enable this kind of process is by storing the credit rating you 
 
 Sometimes, data that is needed during the orchestration is also only available *at that point in time*. You can probably request credit ratings for any historic date, but in some cases, you can only get the *current* data for a piece of information. Especially in those cases you are forced to record some key data in the process engine's data store to make sure it remains available to the orchestration for later reference.
 
-##In summary
+## In summary
 Some data is simply only available because there is an orchestration of a process. Data becomes available during the process and needs to be stored for future reference because the information that was taken into account in one step of the process is relevant in a future step or because comparisons need to be done between values determined in similar activities as time passes. These kinds of orchestration data or references to them should be stored in the data storage of the process engine.
 
 
