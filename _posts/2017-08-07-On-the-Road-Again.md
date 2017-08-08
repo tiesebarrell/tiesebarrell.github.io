@@ -29,8 +29,8 @@ Started on  the 7th of August, ending by the 7th of September.
 Plates according to [wikipedia][wikipedia-plates].
 
 <div class="progress">
-  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="11" aria-valuemin="0" aria-valuemax="29" style="width: 40%">
-    11/29 seen
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="13" aria-valuemin="0" aria-valuemax="29" style="width: 40%">
+    13/29 seen
   </div>
 </div>
 
@@ -39,7 +39,7 @@ Plates according to [wikipedia][wikipedia-plates].
 | BG | - | Bulgaria  | | {{page.not-seen}} |
 | CY | - | Cyprus  | | {{page.not-seen}} |
 | CZ | - | Czech Republic  | | {{page.not-seen}} |
-| D | - | Germany  | | {{page.not-seen}} |
+| D | - | Germany  | | {{page.seen}} |
 | DK | - | Denmark  | | {{page.not-seen}} |
 | E | - | Spain  | | {{page.seen}} |
 | EST | - | Estonia  | | {{page.seen}} |
@@ -56,7 +56,7 @@ Plates according to [wikipedia][wikipedia-plates].
 | LT | - | Lithuania  | | {{page.seen}} |
 | LV | - | Latvia  | | {{page.not-seen}} |
 | M | - | Malta  | | {{page.not-seen}} |
-| NL | - | Netherlands  | | {{page.not-seen}} |
+| NL | - | Netherlands  | | {{page.seen}} |
 | P | - | Portugal  | | {{page.seen}} |
 | PL | - | Poland  | | {{page.seen}} |
 | RO | - | Romania  | | {{page.seen}} |
