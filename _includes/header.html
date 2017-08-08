@@ -8,9 +8,9 @@
 		    </button>
 		    <a class="navbar-brand" href="/index.html">{{ site.name }}</a>
 		</div>
-		
+
 		<div class="navbar-collapse collapse navbar-inverse-collapse">
-			
+
 			<ul class="nav navbar-nav">
 		    	<li class="dropdown">
 		      		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -28,10 +28,10 @@
 
 						{% for currentTag in tag_words %}
 						  	<li>
-						    	<a href="/tag/{{currentTagPlain}}.html">
+						    	<a href="/tag/{{currentTag}}.html">
 						    		{% if site.data.tags[currentTag][0].abbr %}
 						    		<abbr title="{{site.data.tags[currentTag][0].abbr}}">
-						    			{{site.data.tags[currentTag][0].name}}	
+						    			{{site.data.tags[currentTag][0].name}}
 						    		</abbr>
 						    		{% else %}
 						    			{{site.data.tags[currentTag][0].name}}
@@ -45,7 +45,7 @@
 		      		<a href="/about.html">About</a>
 		      	</li>
 		    </ul>
-		    
+
 		    <form class="navbar-form navbar-right" method="get" action="http://www.google.com/search" onSubmit="googleSiteSearch(this)">
 		      <input class="form-control col-lg-8" name="q" placeholder="Search" type="text" />
 		    </form>
