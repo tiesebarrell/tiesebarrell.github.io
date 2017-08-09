@@ -7,6 +7,7 @@ location: "'s Hertogenbosch"
 excerpt: "How international are our roads anyway?"
 seen: '<i class="fa fa-check-circle-o" aria-hidden="true" style="color: green"></i>'
 not-seen: '<i class="fa fa-times-circle-o" aria-hidden="true" style="color: red"></i>'
+numberSeen: 14
 ---
 ![Detective][detective-plate]
 
@@ -29,8 +30,8 @@ Started on  the 7th of August, ending by the 7th of September.
 Plates according to [wikipedia][wikipedia-plates].
 
 <div class="progress">
-  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="13" aria-valuemin="0" aria-valuemax="29" style="width: 40%">
-    13/29 seen
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="{{page.numberSeen}}" aria-valuemin="0" aria-valuemax="29" style="width: 40%">
+    {{page.numberSeen}}/29 seen
   </div>
 </div>
 
@@ -38,7 +39,7 @@ Plates according to [wikipedia][wikipedia-plates].
 | B | - | Belgium  | | {{page.seen}} |
 | BG | - | Bulgaria  | | {{page.not-seen}} |
 | CY | - | Cyprus  | | {{page.not-seen}} |
-| CZ | - | Czech Republic  | | {{page.not-seen}} |
+| CZ | - | Czech Republic  | | {{page.seen}} |
 | D | - | Germany  | | {{page.seen}} |
 | DK | - | Denmark  | | {{page.not-seen}} |
 | E | - | Spain  | | {{page.seen}} |
@@ -73,6 +74,7 @@ Plates according to [wikipedia][wikipedia-plates].
 
 ## Updates
 * 7th of August: added initial sightings
+* 8th of August: added CZ
 
 [wikipedia-plates]: https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Europe "Vehicle registration plates of Europe"
 [detective-plate]: ../../../assets/images/posts/detective-plate.jpg "Detective"
