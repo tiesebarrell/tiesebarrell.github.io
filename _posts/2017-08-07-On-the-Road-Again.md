@@ -7,7 +7,7 @@ location: "'s Hertogenbosch"
 excerpt: "How international are our roads anyway?"
 seen: '<i class="fa fa-check-circle-o" aria-hidden="true" style="color: green"></i>'
 not-seen: '<i class="fa fa-times-circle-o" aria-hidden="true" style="color: red"></i>'
-numberSeen: 14
+numberSeen: 15
 ---
 ![Detective][detective-plate]
 
@@ -37,7 +37,7 @@ Plates according to [wikipedia][wikipedia-plates].
 
 | A | - | Austria  | | {{page.not-seen}} |
 | B | - | Belgium  | | {{page.seen}} |
-| BG | - | Bulgaria  | | {{page.not-seen}} |
+| BG | - | Bulgaria  | | {{page.seen}} |
 | CY | - | Cyprus  | | {{page.not-seen}} |
 | CZ | - | Czech Republic  | | {{page.seen}} |
 | D | - | Germany  | | {{page.seen}} |
@@ -74,7 +74,7 @@ Plates according to [wikipedia][wikipedia-plates].
 
 ## Updates
 * 7th of August: added initial sightings
-* 8th of August: added CZ
+* 8th of August: added CZ and BG
 
 [wikipedia-plates]: https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Europe "Vehicle registration plates of Europe"
 [detective-plate]: ../../../assets/images/posts/detective-plate.jpg "Detective"
