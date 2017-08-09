@@ -7,7 +7,7 @@ location: "'s Hertogenbosch"
 excerpt: "How international are our roads anyway?"
 seen: '<i class="fa fa-check-circle-o" aria-hidden="true" style="color: green"></i>'
 not-seen: '<i class="fa fa-times-circle-o" aria-hidden="true" style="color: red"></i>'
-numberSeen: 15
+numberSeen: 17
 ---
 ![Detective][detective-plate]
 
@@ -46,14 +46,14 @@ Plates according to [wikipedia][wikipedia-plates].
 | EST | - | Estonia  | | {{page.seen}} |
 | F | - | France  | | {{page.seen}} |
 | FIN | - | Finland  | | {{page.not-seen}} |
-| GB | - | Great Britain  | | {{page.not-seen}} |
+| GB | - | Great Britain  | | {{page.seen}} |
 | GBZ | - | Gibraltar  | | {{page.not-seen}} |
 | GR | - | Greece  | | {{page.seen}} |
 | H | - | Hungary  | | {{page.not-seen}} |
 | HR | - | Croatia  | | {{page.not-seen}} |
 | IRL | - | Ireland  | | {{page.not-seen}} |
 | I | - | Italy  | | {{page.seen}} |
-| L | - | Luxembourg  | | {{page.not-seen}} |
+| L | - | Luxembourg  | | {{page.seen}} |
 | LT | - | Lithuania  | | {{page.seen}} |
 | LV | - | Latvia  | | {{page.not-seen}} |
 | M | - | Malta  | | {{page.not-seen}} |
@@ -66,15 +66,19 @@ Plates according to [wikipedia][wikipedia-plates].
 | S | - | Sweden  | | {{page.not-seen}} |
 
 ## Other European license plate codes
-* None spotted yet!
+
+| NL | - | [Netherlands Blue][nl-blue] | | {{page.seen}} |
+| SRB | - | Serbia  | | {{page.seen}} |
 
 ## Other license plate codes
 
+| UA | - | Ukraine  | | {{page.seen}} |
 | TR | - | Turkey  | | {{page.seen}} |
 
 ## Updates
 * 7th of August: added initial sightings
-* 8th of August: added CZ and BG
+* 8th of August: added CZ and BG. Added L, GB, SRB, UA and Netherlands Blue.
 
 [wikipedia-plates]: https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Europe "Vehicle registration plates of Europe"
 [detective-plate]: ../../../assets/images/posts/detective-plate.jpg "Detective"
+[nl-blue]: https://en.m.wikipedia.org/wiki/Vehicle_registration_plates_of_the_Netherlands "Vehicle registration plates of the Netherlands"
