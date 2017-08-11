@@ -7,7 +7,7 @@ location: "'s Hertogenbosch"
 excerpt: "How international are our roads anyway?"
 seen: '<i class="fa fa-check-circle-o" aria-hidden="true" style="color: green"></i>'
 not-seen: '<i class="fa fa-times-circle-o" aria-hidden="true" style="color: red"></i>'
-numberSeen: 19
+numberSeen: 20
 ---
 ![Detective][detective-plate]
 
@@ -62,7 +62,7 @@ Plates according to [wikipedia][wikipedia-plates].
 | PL | - | Poland  | | {{page.seen}} |
 | RO | - | Romania  | | {{page.seen}} |
 | SK | - | Slovakia  | | {{page.seen}} |
-| SLO | - | Slovenia  | | {{page.not-seen}} |
+| SLO | - | Slovenia  | | {{page.seen}} |
 | S | - | Sweden  | | {{page.not-seen}} |
 
 ## Other European license plate codes
@@ -79,7 +79,7 @@ Plates according to [wikipedia][wikipedia-plates].
 ## Updates
 * 7th of August: added initial sightings
 * 8th of August: added CZ and BG. Added L, GB, SRB, UA and Netherlands Blue.
-* 11th of August: added Hungary and Latvia. Also added Macedonia.
+* 11th of August: added Hungary and Latvia. Also added Macedonia and Slovenia.
 
 [wikipedia-plates]: https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Europe "Vehicle registration plates of Europe"
 [detective-plate]: ../../../assets/images/posts/detective-plate.jpg "Detective"
