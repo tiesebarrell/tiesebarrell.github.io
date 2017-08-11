@@ -7,7 +7,7 @@ location: "'s Hertogenbosch"
 excerpt: "How international are our roads anyway?"
 seen: '<i class="fa fa-check-circle-o" aria-hidden="true" style="color: green"></i>'
 not-seen: '<i class="fa fa-times-circle-o" aria-hidden="true" style="color: red"></i>'
-numberSeen: 17
+numberSeen: 19
 ---
 ![Detective][detective-plate]
 
@@ -49,13 +49,13 @@ Plates according to [wikipedia][wikipedia-plates].
 | GB | - | Great Britain  | | {{page.seen}} |
 | GBZ | - | Gibraltar  | | {{page.not-seen}} |
 | GR | - | Greece  | | {{page.seen}} |
-| H | - | Hungary  | | {{page.not-seen}} |
+| H | - | Hungary  | | {{page.seen}} |
 | HR | - | Croatia  | | {{page.not-seen}} |
 | IRL | - | Ireland  | | {{page.not-seen}} |
 | I | - | Italy  | | {{page.seen}} |
 | L | - | Luxembourg  | | {{page.seen}} |
 | LT | - | Lithuania  | | {{page.seen}} |
-| LV | - | Latvia  | | {{page.not-seen}} |
+| LV | - | Latvia  | | {{page.seen}} |
 | M | - | Malta  | | {{page.not-seen}} |
 | NL | - | Netherlands  | | {{page.seen}} |
 | P | - | Portugal  | | {{page.seen}} |
@@ -67,6 +67,7 @@ Plates according to [wikipedia][wikipedia-plates].
 
 ## Other European license plate codes
 
+| MK | - | Macedonia  | | {{page.seen}} |
 | NL | - | [Netherlands Blue][nl-blue] | | {{page.seen}} |
 | SRB | - | Serbia  | | {{page.seen}} |
 
