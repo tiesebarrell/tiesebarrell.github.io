@@ -67,6 +67,7 @@ Plates according to [wikipedia][wikipedia-plates].
 
 ## Other European license plate codes
 
+| CH | - | Switzerland  | | {{page.seen}} |
 | MK | - | Macedonia  | | {{page.seen}} |
 | NL | - | [Netherlands Blue][nl-blue] | | {{page.seen}} |
 | SRB | - | Serbia  | | {{page.seen}} |
@@ -80,6 +81,7 @@ Plates according to [wikipedia][wikipedia-plates].
 * 7th of August: added initial sightings
 * 8th of August: added CZ and BG. Added L, GB, SRB, UA and Netherlands Blue.
 * 11th of August: added Hungary and Latvia. Also added Macedonia and Slovenia.
+* 14th of August: added Switzerland
 
 [wikipedia-plates]: https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Europe "Vehicle registration plates of Europe"
 [detective-plate]: ../../../assets/images/posts/detective-plate.jpg "Detective"
