@@ -7,7 +7,7 @@ location: "'s Hertogenbosch"
 excerpt: "How international are our roads anyway?"
 seen: '<i class="fa fa-check-circle-o" aria-hidden="true" style="color: green"></i>'
 not-seen: '<i class="fa fa-times-circle-o" aria-hidden="true" style="color: red"></i>'
-numberSeen: 20
+numberSeen: 21
 ---
 ![Detective][detective-plate]
 
@@ -45,7 +45,7 @@ Plates according to [wikipedia][wikipedia-plates].
 | E | - | Spain  | | {{page.seen}} |
 | EST | - | Estonia  | | {{page.seen}} |
 | F | - | France  | | {{page.seen}} |
-| FIN | - | Finland  | | {{page.not-seen}} |
+| FIN | - | Finland  | | {{page.seen}} |
 | GB | - | Great Britain  | | {{page.seen}} |
 | GBZ | - | Gibraltar  | | {{page.not-seen}} |
 | GR | - | Greece  | | {{page.seen}} |
@@ -82,6 +82,7 @@ Plates according to [wikipedia][wikipedia-plates].
 * 8th of August: added CZ and BG. Added L, GB, SRB, UA and Netherlands Blue.
 * 11th of August: added Hungary and Latvia. Also added Macedonia and Slovenia.
 * 14th of August: added Switzerland
+* 16th of August: added Finland
 
 [wikipedia-plates]: https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Europe "Vehicle registration plates of Europe"
 [detective-plate]: ../../../assets/images/posts/detective-plate.jpg "Detective"
