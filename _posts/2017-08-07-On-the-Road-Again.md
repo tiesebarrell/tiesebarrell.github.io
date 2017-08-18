@@ -74,6 +74,7 @@ Plates according to [wikipedia][wikipedia-plates].
 
 ## Other license plate codes
 
+| BY | - | Belarus  | | {{page.seen}} |
 | UA | - | Ukraine  | | {{page.seen}} |
 | TR | - | Turkey  | | {{page.seen}} |
 
@@ -83,6 +84,7 @@ Plates according to [wikipedia][wikipedia-plates].
 * 11th of August: added Hungary and Latvia. Also added Macedonia and Slovenia.
 * 14th of August: added Switzerland
 * 16th of August: added Finland
+* 18th of August: added Belarus
 
 [wikipedia-plates]: https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Europe "Vehicle registration plates of Europe"
 [detective-plate]: ../../../assets/images/posts/detective-plate.jpg "Detective"
