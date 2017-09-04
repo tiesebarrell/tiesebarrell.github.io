@@ -70,6 +70,7 @@ Plates according to [wikipedia][wikipedia-plates].
 | CH | - | Switzerland  | | {{page.seen}} |
 | MK | - | Macedonia  | | {{page.seen}} |
 | NL | - | [Netherlands Blue][nl-blue] | | {{page.seen}} |
+| N | - | Norway | | {{page.seen}} |
 | SRB | - | Serbia  | | {{page.seen}} |
 
 ## Other license plate codes
