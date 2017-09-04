@@ -30,7 +30,7 @@ Started on  the 7th of August, ending by the 7th of September.
 Plates according to [wikipedia][wikipedia-plates].
 
 <div class="progress">
-  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="{{page.numberSeen}}" aria-valuemin="0" aria-valuemax="29" style="width: 40%">
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="{{page.numberSeen}}" aria-valuemin="0" aria-valuemax="29" style="width: 100%">
     {{page.numberSeen}}/29 seen
   </div>
 </div>
