@@ -91,6 +91,7 @@ Plates according to [wikipedia][wikipedia-plates].
 * 25th of August: added Sweden
 * 30th of August: added Russia
 * 3rd of September: added Croatia
+* 5th of September: added Norway
 
 [wikipedia-plates]: https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Europe "Vehicle registration plates of Europe"
 [detective-plate]: ../../../assets/images/posts/detective-plate.jpg "Detective"
