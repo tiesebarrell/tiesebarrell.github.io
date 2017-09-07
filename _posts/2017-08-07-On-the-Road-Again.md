@@ -23,7 +23,7 @@ No game or experiment can be without some "rules". So here are the ones I'm play
 
 The goal is to see how many of the EU plates come up in a month. Below is the list I have managed to spot. Any plates from outside the EU or not bearing a EU emblem are listed separately of they can be identified.
 
-Started on  the 7th of August, ending by the 7th of September.
+Started on the 7th of August, ending by the 7th of September.
 
 ## EU license plate codes
 
@@ -67,6 +67,7 @@ Plates according to [wikipedia][wikipedia-plates].
 
 ## Other European license plate codes
 
+| BIH | - | Bosnia and Herzegovina  | | {{page.seen}} |
 | CH | - | Switzerland  | | {{page.seen}} |
 | MK | - | Macedonia  | | {{page.seen}} |
 | NL | - | [Netherlands Blue][nl-blue] | | {{page.seen}} |
@@ -92,6 +93,10 @@ Plates according to [wikipedia][wikipedia-plates].
 * 30th of August: added Russia
 * 3rd of September: added Croatia
 * 5th of September: added Norway
+* 6th of September: added Bosnia and Herzegovina
+
+## Conclusion
+I managed to spot {{page.numberSeen}} of the 29 EU plates and about 10 others. Curiously, no Danes on the road. I did see a trailer a couple of times, but these were hauled by vehicles not registered in Denmark. So by my own rules...
 
 [wikipedia-plates]: https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Europe "Vehicle registration plates of Europe"
 [detective-plate]: ../../../assets/images/posts/detective-plate.jpg "Detective"
