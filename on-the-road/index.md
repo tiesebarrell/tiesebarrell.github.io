@@ -1,22 +1,33 @@
 ---
 layout: default
-title: On the Road
+title: ‘On the Road’
 platesEu: 25
 platesOther: 9
 ---
 
 ![Detective][detective-plate]
 
-Started on the 7th of August 2017, ending by the 7th of August 2017.
+Started on the 7th of August 2017, ending by the 7th of August 2018.
+
+<div class=“progress”>
+  <div class=“progress-bar progress-bar-success progress-bar-striped” role=“progressbar” aria-valuenow=“{{page.numberSeen}}” aria-valuemin=“0” aria-valuemax=“29” style=“width: 100%”>
+    {{page.numberSeen}}/29 seen
+  </div>
+</div>
 
 ## Current status
 
 <div class=“progress”>
-  <div class=“progress-bar progress-bar-success progress-bar-striped” role=“progressbar” aria-valuenow=“{{page.platesEu}}” aria-valuemin=“0” aria-valuemax=“{{page.platesEu + page.platesOther}}” style=“width: 100%”>
-    {{page.platesEu}}
+  <div class=“progress-bar progress-bar-success progress-bar-striped” role=“progressbar” aria-valuenow=“{{page.platesEu}}” aria-valuemin=“0” aria-valuemax=“{{page.platesEu/page.platesOther}}” style=“width: 100%”>
+    {{page.platesEu}} EU plates
   </div>
-  <div class=“progress-bar progress-bar-warning progress-bar-striped” role=“progressbar” aria-valuenow=“{{page.platesOther}}” aria-valuemin=“0” aria-valuemax=“{{page.platesEu + page.platesOther}}” style=“width: 100%”>
-    {{page.platesOther}}
+  
+  <div class=“progress-bar progress-bar-success progress-bar-striped” role=“progressbar” aria-valuenow=“{{page.platesEu}}” aria-valuemin=“0” aria-valuemax=“{{page.platesEu/page.platesOther}}” style=“width: 100%”>
+    {{page.platesEu}} EU plates
+  </div>
+  
+  <div class=“progress-bar progress-bar-warning progress-bar-striped” role=“progressbar” aria-valuenow=“{{page.platesOther}}” aria-valuemin=“0” aria-valuemax=“{{page.platesEu/page.platesOther}}” style=“width: 100%”>
+    {{page.platesOther}} Other plates
   </div>
 </div>
 
