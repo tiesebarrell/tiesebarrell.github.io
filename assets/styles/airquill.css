@@ -7,7 +7,7 @@ section.post-content {
 	line-height: 32px;
 	font-size: 110%;
 	font-weight: 300;
-	font-family: "Roboto Slab", sans-serif; 
+	font-family: "Roboto Slab", sans-serif;
 }
 
 section.post-content {
@@ -73,3 +73,14 @@ a.profile i {
 
 .post-content img {
 	max-width: 100%;
+}
+
+table {
+	border-spacing: 10px;
+  border-collapse: separate;
+}
+
+td,
+th {
+	padding: 10px;
+}

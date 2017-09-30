@@ -1,60 +1,61 @@
 ---
 layout: default
-title: ‘On the Road’
-platesEu: 25
+title: On the Road
+platesEu: 26
 platesOther: 9
 ---
+{% assign total = page.platesEu | plus: page.platesOther %}
+{% assign euFraction = page.platesEu | times: 100 | divided_by: total %}
+{% assign otherFraction = page.platesOther | times: 100 | divided_by: total %}
 
-![Detective][detective-plate]
-
-Started on the 7th of August 2017, ending by the 7th of August 2018.
-
-<div class=“progress”>
-  <div class=“progress-bar progress-bar-success progress-bar-striped” role=“progressbar” aria-valuenow=“{{page.numberSeen}}” aria-valuemin=“0” aria-valuemax=“29” style=“width: 100%”>
-    {{page.numberSeen}}/29 seen
-  </div>
-</div>
+In following of [this post][on-the-road-again], I am tracking how many different license plates I can spot in the time span of a year. Started on the 7th of August 2017, ending by the 7th of August 2018.
 
 ## Current status
 
-<div class=“progress”>
-  <div class=“progress-bar progress-bar-success progress-bar-striped” role=“progressbar” aria-valuenow=“{{page.platesEu}}” aria-valuemin=“0” aria-valuemax=“{{page.platesEu/page.platesOther}}” style=“width: 100%”>
-    {{page.platesEu}} EU plates
-  </div>
-  
-  <div class=“progress-bar progress-bar-success progress-bar-striped” role=“progressbar” aria-valuenow=“{{page.platesEu}}” aria-valuemin=“0” aria-valuemax=“{{page.platesEu/page.platesOther}}” style=“width: 100%”>
-    {{page.platesEu}} EU plates
-  </div>
-  
-  <div class=“progress-bar progress-bar-warning progress-bar-striped” role=“progressbar” aria-valuenow=“{{page.platesOther}}” aria-valuemin=“0” aria-valuemax=“{{page.platesEu/page.platesOther}}” style=“width: 100%”>
-    {{page.platesOther}} Other plates
-  </div>
+<div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" style="width: {{euFraction}}%" aria-valuenow="{{page.platesEu}}" aria-valuemin="0" aria-valuemax="{{total}}">{{page.platesEu}} EU plates</div>
+  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" style="width: {{otherFraction}}%" aria-valuenow="{{page.platesOther}}" aria-valuemin="0" aria-valuemax="{{total}}">{{page.platesOther}} Other plates</div>
 </div>
-
 
 ## Sightings log
 
-| 2017-08-07 | A | Austria | took 1 day |
-| 2017-08-09 | B | Belgium | took 3 days |
+| Date          | Code | Country                | Seen within |
+| ------------- | ---- | ---------------------- | ----------- |
+| 2017-08-07    | NL   | Netherlands            |             |
+| 2017-08-07    | B    | Belgium                |             |
+| 2017-08-07    | D    | Germany                |             |
+| 2017-08-07    | E    | Spain                  |             |
+| 2017-08-07    | EST  | Estonia                |             |
+| 2017-08-07    | F    | France                 |             |
+| 2017-08-07    | G    | Greece                 |             |
+| 2017-08-07    | I    | Italy                  |             |
+| 2017-08-07    | LT   | Lithuania              |             |
+| 2017-08-07    | P    | Portugal               |             |
+| 2017-08-07    | PL   | Poland                 |             |
+| 2017-08-07    | RO   | Romania                |             |
+| 2017-08-07    | SK   | Slovakia               |             |
+| 2017-08-07    | TR   | Turkey                 |             |
+| 2017-08-08    | UA   | Ukraine                |             |
+| 2017-08-08    | SRB  | Serbia                 |             |
+| 2017-08-08    | GB   | Great Britain          |             |
+| 2017-08-08    | L    | Luxembourg             |             |
+| 2017-08-08    | BG   | Bulgaria               |             |
+| 2017-08-08    | CZ   | Czech Republic         |             |
+| 2017-08-11    | SLO  | Slovenia               |             |
+| 2017-08-11    | MK   | Macedonia              |             |
+| 2017-08-11    | LV   | Latvia                 |             |
+| 2017-08-11    | H    | Hungary                |             |
+| 2017-08-14    | CH   | Switzerland            |             |
+| 2017-08-16    | FIN  | Finland                |             |
+| 2017-08-18    | BY   | Belarus                |             |
+| 2017-08-18    | IRL  | Ireland                |             |
+| 2017-08-18    | A    | Austria                |             |
+| 2017-08-25    | S    | Sweden                 |             |
+| 2017-08-30    | RUS  | Russian Federation     |             |
+| 2017-09-03    | HR   | Croatia                |             |
+| 2017-09-05    | N    | Norway                 |             |
+| 2017-09-06    | BIH  | Bosnia and Herzegovina |             |
+| 2017-09-24    | CY   | Cyprus                 |             |
+{: style="border: 1px solid black"}
 
-
-## Updates
-* 7th of August: added initial sightings
-* 8th of August: added CZ and BG. Added L, GB, SRB, UA and Netherlands Blue.
-* 11th of August: added Hungary and Latvia. Also added Macedonia and Slovenia.
-* 14th of August: added Switzerland
-* 16th of August: added Finland
-* 18th of August: added Belarus
-* 18th of August: added Austria and Ireland
-* 25th of August: added Sweden
-* 30th of August: added Russia
-* 3rd of September: added Croatia
-* 5th of September: added Norway
-* 6th of September: added Bosnia and Herzegovina
-
-## Conclusion
-I managed to spot {{page.numberSeen}} of the 29 EU plates and about 10 others. Curiously, no Danes on the road. I did see a trailer a couple of times, but these were hauled by vehicles not registered in Denmark. So by my own rules...
-
-[wikipedia-plates]: https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Europe “Vehicle registration plates of Europe”
-[detective-plate]: ../../../assets/images/posts/detective-plate.jpg “Detective”
-[nl-blue]: https://en.m.wikipedia.org/wiki/Vehicle_registration_plates_of_the_Netherlands “Vehicle registration plates of the Netherlands”
+[on-the-road-again]: ../2017/08/07/On-the-Road-Again.html "On the Road Again"
