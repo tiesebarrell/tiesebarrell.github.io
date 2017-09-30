@@ -56,6 +56,5 @@ In following of [this post][on-the-road-again], I am tracking how many different
 | 2017-09-05    | N    | Norway                 |             |
 | 2017-09-06    | BIH  | Bosnia and Herzegovina |             |
 | 2017-09-24    | CY   | Cyprus                 |             |
-{: style="border: 1px solid black"}
 
 [on-the-road-again]: ../2017/08/07/On-the-Road-Again.html "On the Road Again"
