@@ -58,5 +58,6 @@ In following of [this post][on-the-road-again], I am tracking how many different
 | 2017-09-24    | CY   | Cyprus                 |             |
 | 2017-10-27    | MA   | Morocco                |             |
 | 2017-11-01    | GE   | Georgia                |             |
+| 2017-11-13    | MD   | Moldova                |             |
 
 [on-the-road-again]: ../2017/08/07/On-the-Road-Again.html "On the Road Again"
