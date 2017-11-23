@@ -1,8 +1,8 @@
 ---
 layout: default
 title: On the Road
-platesEu: 26
-platesOther: 11
+platesEu: 27
+platesOther: 12
 ---
 {% assign total = page.platesEu | plus: page.platesOther %}
 {% assign euFraction = page.platesEu | times: 100 | divided_by: total %}
@@ -59,5 +59,6 @@ In following of [this post][on-the-road-again], I am tracking how many different
 | 2017-10-27    | MA   | Morocco                |             |
 | 2017-11-01    | GE   | Georgia                |             |
 | 2017-11-13    | MD   | Moldova                |             |
+| 2017-11-16    | DK   | Denmark                |             |
 
 [on-the-road-again]: ../2017/08/07/On-the-Road-Again.html "On the Road Again"
