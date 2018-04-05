@@ -7,7 +7,15 @@ location: "'s-Hertogenbosch"
 excerpt: "TODO"
 tldr: "TODO"
 ---
-Notes
+Having trouble defining the scope of a business process or making design decisions at functional or technical levels? Try formulating the process' intent. It will most surely help. This post discusses the *Value of Intent*.
+
+For the purposes of this post, let's get our definitions laid down. In this context, I am refering to *intention* as "purpose or attitude toward the effect of one's actions or conduct", or "an act or instance of determining mentally upon some action or result.
+The end or object intended; purpose." TODO
+
+* Scope
+when does the process start and which possible outcomes to we 
+
+
 
 Scope
 Aggregate mutatie is dat een normale afloop van die activiteit? -> Design decisions
