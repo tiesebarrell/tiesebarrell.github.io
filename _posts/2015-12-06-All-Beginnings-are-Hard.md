@@ -39,7 +39,7 @@ For some reason, we sometimes tend to act like a military operation: information
 ## How about that end?
 By now you may be excited to get started automating the rest of the process. Unfortunately, you need to revisit the previous three steps first. To define what the process is, you need to decide what starts the process *as well as* what ends the process. Many processes have several valid outcomes and these all determine the scope and content of a process. Does the process end once we package orders or do we require a receipt confirmation on the other end before we're satisfied our work is complete? If we need more information in order to process a customer's request, does that mean we ask for it and then close the process until the information arrives and we start a new process? Maybe we should keep a single process open ended until we receive an update. These are the happy flow versus alternative flow decisions that need to be made and are crucial for scoping the process and the project to automate it.
 
-##Benefits
+## Benefits
 Admittedly, there is no magic in following these simple steps. There's a lot to be gained for doing them, though.
 
 * First, if nothing else, you'll end up with a happy project manager who now has a clear description of the scope of the process that's being designed and implemented;
