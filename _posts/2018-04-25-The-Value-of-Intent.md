@@ -1,6 +1,8 @@
 ---
 layout: post
 title: The Value of Intent
+redirect_from:
+ - /2018/04/25/The-Value-of-Intent.html
 links:
  - link: ../../../2015/12/06/All-Beginnings-are-Hard.html
    name: All Beginnings are Hard

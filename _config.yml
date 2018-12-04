@@ -5,11 +5,22 @@ authorEmail: info@mazidea.com
 
 markdown: kramdown
 highlighter: rouge
+permalink: /:categories/:year/:month/:day/:slug/
 
 safe: true
-gems:
+plugins:
  - jemoji
  - jekyll-redirect-from
  - jekyll-sitemap
 
+whitelist:
+- jekyll-redirect-from
+
 tagline:  Presumptuous tagline goes here
+
+kramdown:
+  parse_block_html: true
+
+exclude: [
+  gulpfile.js
+]
