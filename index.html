@@ -2,34 +2,8 @@
 layout: default
 ---
 
-<div class="row">
-	<div class="col-md-12">
-		<div class="jumbotron index">
-  			<h1><img src="/assets/images/airquill-icon.png"/>&nbsp;{{ site.name }}</h1>
-  			<p>{{ site.tagline }}</p>
-  			<p>
-  				<a class="btn btn-primary" href="#recent-posts">
-  					<span class="glyphicon glyphicon-chevron-down"></span>
-  					Recent posts
-  				</a>
-  				<a class="btn btn-primary" href="posts.html">
-  					<span class="glyphicon glyphicon-list"></span>
-  					More posts
-  				</a>
-  			</p>
-		</div>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-md-12">
-		<a id="recent-posts" />
-		<h1>Recent posts</h1>
-	</div>
-</div>
-
 {% for post in site.posts limit:5 %}
-<div class="row">
+<div class="row" style="background-color: #f7f7f7">
     <div class="col-md-12">
     	<h2>
       		<a href="{{ post.url }}">{{ post.title }}</a>
