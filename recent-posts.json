@@ -1,0 +1,14 @@
+---
+layout: none
+permalink: /recent-posts/
+---
+[
+{% for post in site.posts | sort: descending | limit: 3 %}
+  {
+    "date": "{{ post.date | date_to_xmlschema }}",
+    "title": "{{post.title}}",
+    "url": "{{ site.url }}{{ post.id }}",
+    "excerpt": "{{ post.excerpt }}"
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]
