@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Things I've noticed
+redirect_from:
+ - /2014/09/13/Things-ive-noticed.html
 tags: [misc]
 links: 
  - link: ../../../2015/01/03/Other-things-ive-noticed.html

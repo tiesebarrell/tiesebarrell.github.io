@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Storing data in automated business processes
+redirect_from:
+ - /2014/06/29/Storing-data-in-processes.html
 tags: [activiti, bpm, architecture]
 location: Eindhoven
 ---

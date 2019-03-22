@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Other things I've noticed
+redirect_from:
+ - /2015/01/03/Other-things-ive-noticed.html
 links: 
- - link: ../../../2014/09/14/Things-ive-noticed.html
+ - link: /2014/09/14/things-ive-noticed
    name: Things I've noticed
 tags: [misc]
 ---
@@ -26,4 +28,4 @@ Here are some [other things][things] I've noticed.
 
 [suits]: http://www.imdb.com/title/tt1632701/ "Suits"
 [a12]: http://www.wegenwiki.nl/A12_(Nederland) "A12 Motorway, The Netherlands"
-[things]: ../../../2014/09/14/Things-ive-noticed.html "Things I've noticed"
+[things]: /2014/09/14/things-ive-noticed "Things I've noticed"

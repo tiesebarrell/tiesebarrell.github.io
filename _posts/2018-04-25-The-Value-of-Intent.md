@@ -4,7 +4,7 @@ title: The Value of Intent
 redirect_from:
  - /2018/04/25/The-Value-of-Intent.html
 links:
- - link: ../../../2015/12/06/All-Beginnings-are-Hard.html
+ - link: /2015/12/06/all-beginnings-are-hard
    name: All Beginnings are Hard
 tags: [agile,bpm]
 location: "'s-Hertogenbosch"
@@ -105,8 +105,8 @@ Defining a process' intent brings us a greater understanding of why it exists. T
 [1]: http://www.dictionary.com/browse/intention?s=t "Intention"
 [2]: https://www.brainyquote.com/quotes/stephen_covey_636508 "Stephen Covey on BrainyQuote"
 [bpmn-method-and-style]: https://www.amazon.com/BPMN-Method-Style-levels-based-methodology/dp/0982368100 "BPMN Method and Style"
-[pushpins-and-threads]: ../../../assets/images/posts/pushpins-and-threads.jpg  "Determining intent"
-[all-beginnings-are-hard]: ../../../2015/12/06/All-Beginnings-are-Hard.html "All Beginnings are Hard"
+[pushpins-and-threads]: /assets/images/posts/pushpins-and-threads.jpg  "Determining intent"
+[all-beginnings-are-hard]: /2015/12/06/all-beginnings-are-hard "All Beginnings are Hard"
 [hajoReijers]: https://twitter.com/profBPM "Hajo Reijers"
 [remcoDijkman]: https://twitter.com/rmdijkman "Remco Dijkman"
 [fundamentals-of-bpm]: https://www.amazon.com/Fundamentals-Business-Process-Management-Marlon/dp/3662565080/ "Fundamentals of Business Process Management"

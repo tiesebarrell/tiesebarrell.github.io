@@ -1,6 +1,8 @@
 ---
 layout: post
 title: On the Road Again
+redirect_from:
+ - /2017/08/07/On-the-Road-Again.html
 links:
 tags: [misc]
 location: "'s Hertogenbosch"
@@ -99,5 +101,5 @@ Plates according to [wikipedia][wikipedia-plates].
 I managed to spot {{page.numberSeen}} of the 29 EU plates and about 10 others. Curiously, no Danes on the road. I did see a trailer a couple of times, but these were hauled by vehicles not registered in Denmark. So by my own rules...
 
 [wikipedia-plates]: https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Europe "Vehicle registration plates of Europe"
-[detective-plate]: ../../../assets/images/posts/detective-plate.jpg "Detective"
+[detective-plate]: /assets/images/posts/detective-plate.jpg "Detective"
 [nl-blue]: https://en.m.wikipedia.org/wiki/Vehicle_registration_plates_of_the_Netherlands "Vehicle registration plates of the Netherlands"

@@ -1,12 +1,14 @@
 ---
 layout: post
 title: More on Orchestration Data
+redirect_from:
+ - /2015/07/20/More-on-Orchestration-Data.html
 links: 
- - link: ../../../2014/06/29/Storing-data-in-processes.html
+ - link: /2014/06/29/storing-data-in-processes
    name: Storing data in automated business processes
 tags: [architecture,bpm]
 location: Heerlen
-excerpt: Your process engine [may not need your data](../../../2014/06/29/Storing-data-in-processes.html), but the orchestration it's performing might.
+excerpt: Your process engine [may not need your data](/2014/06/29/storing-data-in-processes), but the orchestration it's performing might.
 tldr: Some data is only available in your process because the orchestration has taken place. This includes information that was taken into account while performing the execution and has no history and therefore cannot be retrieved in retrospect. In such cases the data should be stored in the process engine's data storage.
 ---
 
@@ -45,5 +47,5 @@ Sometimes, data that is needed during the orchestration is also only available *
 Some data is simply only available because there is an orchestration of a process. Data becomes available during the process and needs to be stored for future reference because the information that was taken into account in one step of the process is relevant in a future step or because comparisons need to be done between values determined in similar activities as time passes. These kinds of orchestration data or references to them should be stored in the data storage of the process engine.
 
 
-[storing-data-in-processes]: ../../../2014/06/29/Storing-data-in-processes.html "Storing data in automated business processes"
-[conductors-baton]: ../../../assets/images/posts/conductors-baton.jpg  "Conducting the orchestration"
+[storing-data-in-processes]: /2014/06/29/storing-data-in-processes "Storing data in automated business processes"
+[conductors-baton]: /assets/images/posts/conductors-baton.jpg  "Conducting the orchestration"

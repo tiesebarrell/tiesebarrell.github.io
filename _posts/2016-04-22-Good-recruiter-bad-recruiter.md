@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Good Recruiter, Bad Recruiter
+redirect_from:
+ - /2016/04/22/Good-recruiter-bad-recruiter.html
 tags: [misc]
 location: "Heerlen"
 excerpt: "When a recruiter contacts you, the expectation is for you to feel flattered. But should you really be? A look at some of the habits of bad recruiters."
@@ -19,4 +21,4 @@ Working in IT seems to be an automatic magnet to recruiters. Which is a good thi
 
 I'm thinking there's still a whole lot of market share out there for *Good Recruiter* to do business. Please give me a call.
 
-[word-cloud-recruitment]: ../../../assets/images/posts/word-cloud-recruitment.jpg  "Recruitment"
+[word-cloud-recruitment]: /assets/images/posts/word-cloud-recruitment.jpg  "Recruitment"

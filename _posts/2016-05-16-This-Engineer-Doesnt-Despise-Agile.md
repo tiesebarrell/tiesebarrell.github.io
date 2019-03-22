@@ -1,6 +1,8 @@
 ---
 layout: post
 title: This Engineer Doesn't Despise Agile
+redirect_from:
+ - /2016/05/16/This-Engineer-Doesnt-Despise-Agile.html
 links: 
  - link: https://age-of-product.com/engineers-despise-agile/
    name: Why Engineers Despise Agile
@@ -71,6 +73,6 @@ This doesn't mean agile doesn't have drawbacks or is the silver bullet for any d
 
 As for the article, maybe a better title would have been "Why Engineers Despise Poor Agile Implementations". 
 
-[balance]: ../../../assets/images/posts/balance.jpg  "Balance"
+[balance]: /assets/images/posts/balance.jpg  "Balance"
 [why-engineers-despise-agile]: https://age-of-product.com/engineers-despise-agile/ "Why Engineers Despise Agile"
-[about]: ../../../about.html "About"
+[about]: /about.html "About"

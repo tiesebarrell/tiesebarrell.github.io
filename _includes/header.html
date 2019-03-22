@@ -18,7 +18,7 @@
 		      		</a>
 		        	<ul class="dropdown-menu">
 		          		<li>
-		          			<a href="/posts.html">
+		          			<a href="/posts/">
 		          				All Posts
 		          			</a>
 		          		</li>
@@ -28,7 +28,7 @@
 
 						{% for currentTag in tag_words %}
 						  	<li>
-						    	<a href="/tag/{{currentTag}}.html">
+						    	<a href="/tag/{{currentTag}}">
 						    		{% if site.data.tags[currentTag][0].abbr %}
 						    		<abbr title="{{site.data.tags[currentTag][0].abbr}}">
 						    			{{site.data.tags[currentTag][0].name}}

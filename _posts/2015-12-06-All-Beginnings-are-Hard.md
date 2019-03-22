@@ -1,8 +1,10 @@
 ---
 layout: post
 title: All Beginnings are Hard
+redirect_from:
+ - /2015/12/06/All-Beginnings-are-Hard.html
 links: 
- - link: ../../../2014/06/29/Storing-data-in-processes.html
+ - link: /2014/06/29/storing-data-in-processes
    name: Storing data in automated business processes
 tags: [bpm]
 location: "'s Hertogenbosch"
@@ -61,5 +63,5 @@ Sound simple? Indeed, it is; and it's well worth it. All we need is to *just do 
 
 All beginnings are hard, but as the saying goes: a good beginning is half the battle. Make sure you get off to a good start and determine the start and end(s) of your process before you dig into the details of what happens inbetween. It's a surefire investment for the whole project.
 
-[start-end]: ../../../assets/images/posts/start-end.jpg  "Getting the start and end right"
-[storing-data]: ../../../2014/06/29/Storing-data-in-processes.html "Storing data in automated business processes"
+[start-end]: /assets/images/posts/start-end.jpg  "Getting the start and end right"
+[storing-data]: /2014/06/29/storing-data-in-processes "Storing data in automated business processes"
