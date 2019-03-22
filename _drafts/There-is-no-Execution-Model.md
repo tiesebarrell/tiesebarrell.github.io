@@ -38,26 +38,6 @@ This does not magically happen, of course. Because zero-code business process ma
 
 It's not that simple, of course. In many cases, the business model is not executable. This happens when the model has a different abstraction level. These kinds of abstract models are often created in the exploratory or experimental phase, where they are extremely useful. They're not meant to deal with all of the details needed for execution, but instead focus on the bigger picture. That's what the abstraction is for: not having to worry about the details, **yet**. The *yet* in that sentence is essential. Referring to the remark above that the business models will never get to the level that's needed for execution, ....
 
-ADD: at certain level of abstraction, the business model is not executable. That's what the abstraction is for: not worrying about all of the details. But the levels should be linked and consistent!
-* The business process might be wider, becuase there's more going on than in the system. You might want to document that.
-
-* We don't program in BPMN. If the power goes out, the transaction does not commmit. Simple as that - techncal error - rely on default behavior.
-
-* We don't want to see technical stuff in the model. -> add bahviour with execution listeners for instance
-
-* Execute a technical state flow in a separate subprocess, in the business process it's one logical activity and as a whole, that's how it's executed. In the details of an activity, you can also leverage the state machine of the process engine to deal with the idiosyncracies of some systems. These are exceptions rather than the rule.
-
-* The executable model is just the model with some execution details added to the mix, which are, for 99% of the cases, invisible.
-
-* Exeception flows that you want to handle in some way ARE functional paths - model them. Maybe not at every level of abstraction to talk with different stakeholders, but at the 2nd level (Bruce 
-Silver), for sure. We need to know about that detail, because it is important for what we do and how and when we do it.
-
-fine to have different tools such as aris but need the same level of detail
-
-
-? No, we don't need the user to be able to cancel the flow at any point. Either it's an execution path and modelled explicitly, or it's adminsitrative intervention 
-
-* Grab back to the statements from the introduction to retort them based on the rest of the post.
 
 
 
