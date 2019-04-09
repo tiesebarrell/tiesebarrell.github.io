@@ -35,7 +35,10 @@ This does not magically happen, of course. Because zero-code business process ma
 ## Levels of abstraction
 
 It's not that simple, of course. In many cases, the business model is not executable. This happens when the model has a different abstraction level. These kinds of abstract models are often created in the exploratory or experimental phase, where they are extremely useful because different audiences have different levels of interest in details. 
-TODO there is scientific evidence that shows this - see 2019022001 and references These abstracter?/more abstract models are not meant to deal with all of the particulars (think of activities and events) needed for execution, but instead focus on conveying the big(ger) picture. That's what the abstraction is for: not having to worry about the details, **yet**. The *yet* in that sentence is essential. Referring to the remark above that the business models will never get to the level that's needed for execution, ....
+
+TODO there is scientific evidence that shows this - see 2019022001 and references 
+
+These abstracter?/more abstract models are not meant to deal with all of the particulars (think of activities and events) needed for execution, but instead focus on conveying the big(ger) picture. That's what the abstraction is for: not having to worry about the details, **yet**. The *yet* in that sentence is essential. Referring to the remark above that the business models will never get to the level that's needed for execution, ....
 
 
 But the levels should be linked and consistent!
