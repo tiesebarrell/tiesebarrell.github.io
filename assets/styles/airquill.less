@@ -1,5 +1,15 @@
+@import (inline) "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+/*!
+ * AirQuill v2.0.0 (https://airquill.io/)
+ */
+
 @base: #ff0000;
-@pageHeaderMargin: 30px;
+@pageHeaderMargin: 50px;
+
+nav .logo {
+	height: 100px;
+}
 
 .box-shadow(@style, @c) when (iscolor(@c)) {
   -webkit-box-shadow: @style @c;
