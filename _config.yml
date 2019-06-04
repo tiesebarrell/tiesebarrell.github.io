@@ -16,11 +16,16 @@ plugins:
 whitelist:
 - jekyll-redirect-from
 
-tagline:  Presumptuous tagline goes here
+tagline: Presumptuous tagline goes here
 
 kramdown:
   parse_block_html: true
 
 exclude: [
-  gulpfile.js
+  "assets/styles/airquill.less",
+  "assets/styles/airquill.css",
+  "assets/javascript/airquill.js",
+  "assets/javascript/airquill.js.less",
+  "assets/images/*.svg",
+  "node_modules"
 ]
