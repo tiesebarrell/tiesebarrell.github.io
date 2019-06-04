@@ -1,15 +1,168 @@
 @import (inline) "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import (inline) "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 /*!
  * AirQuill v2.0.0 (https://airquill.io/)
  */
 
 @base: #ff0000;
-@pageHeaderMargin: 50px;
+@section-offset: 33px;
 
-nav .logo {
-	height: 100px;
+@white: #ffffff;
+@yellow: #ffff00;
+@grey-light: #e6e6e6;
+@grey-dark: #333333;
+@black: #000000;
+
+@logo-light: "/assets/images/airquill-logo-light.png";
+@logo-white: "/assets/images/airquill-logo-white.png";
+@logo-dark: "/assets/images/airquill-logo-dark.png";
+@square-pattern-dark: "/assets/images/lifted-square-pattern-dark.png";
+@square-pattern-light: "/assets/images/lifted-square-pattern-light.png";
+@square-pattern-white: "/assets/images/lifted-square-pattern-white.png";
+
+.theme-white {
+	color: @white;
 }
+
+.theme-yellow {
+	color: @yellow;
+}
+
+.theme-grey-light {
+	color: @grey-light;
+}
+
+.theme-grey-dark {
+	color: @grey-dark;
+}
+
+.theme-black {
+	color: @black;
+}
+
+nav.main {
+	min-height: 99px;
+
+	ul.nav {
+		position: relative;
+	}
+
+	a.nav-link {
+		white-space: nowrap;
+	}
+
+	.dropdown-toggle:after {
+		content: none;
+	}
+
+	a.logo {
+		display: block;
+		height: 93px;
+		width: 424px;
+		background-repeat: no-repeat;
+	}
+}
+
+section.main {
+	margin-top: @section-offset;
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.post-summary {
+		margin-bottom: 3ex;
+	}
+
+	.post-summary-bar {
+		vertical-align: middle;
+		line-height: 33px;
+	}
+}
+
+body.theme-light {
+	nav.main {
+		background: url(@square-pattern-dark) repeat;
+		padding: 9px;
+
+		li a.nav-link {
+			color: @grey-dark;
+			background-color: @grey-light;
+
+			&:hover {
+				background-color: @yellow;
+			}
+		}
+
+		a.logo {
+			background-image: url(@logo-light);
+		}
+	}
+
+	section.main {
+
+		a {
+			color: @grey-dark;
+		}
+
+		.post-summary {
+
+			.post-summary-content {
+				background-color: @grey-light;
+				color: @grey-dark;
+			}
+
+			.post-summary-bar {
+				background-color: darken(@grey-light, 5%);
+			}
+		}
+	}
+}
+
+body.theme-white {
+	nav.main {
+		background: url(@square-pattern-white) repeat;
+
+		li a.nav-link {
+			color: @grey-light;
+			background-color: @white;
+
+			&:hover {
+				color: @grey-dark;
+			}
+		}
+
+		a.logo {
+			background-image: url(@logo-dark);
+		}
+	}
+}
+
+body.theme-dark {
+	nav.main {
+		background: url(@square-pattern-dark) repeat;
+
+		li a.nav-link {
+			color: @grey-dark;
+			background-color: @black;
+
+			&:hover {
+				color: @yellow;
+			}
+		}
+
+		a.logo {
+			background-image: url(@logo-light);
+		}
+	}
+}
+
+
 
 .box-shadow(@style, @c) when (iscolor(@c)) {
   -webkit-box-shadow: @style @c;
@@ -22,10 +175,6 @@ nav .logo {
   color: saturate(@base, 5%);
   border-color: lighten(@base, 30%);
   div { .box-shadow(0 0 5px, 30%) }
-}
-
-.page-header {
-	margin-top: @pageHeaderMargin;
 }
 
 p.content,
@@ -69,19 +218,6 @@ a.profile i {
 
 .profile-links {
 	text-align: right;
-}
-
-.jumbotron h1,
-.jumbotron p {
-	color: black;
-}
-
-.jumbotron p {
-	color: white;
-}
-
-.jumbotron.index {
-	background-image: url('/assets/images/himmelbjerget.jpg');
 }
 
 .container.post p {

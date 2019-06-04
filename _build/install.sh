@@ -4,10 +4,20 @@ LESS_FILE="assets/styles/airquill.less"
 CSS_FILE="assets/styles/airquill.css"
 CSS_MIN_FILE="assets/styles/airquill.min.css"
 
+JAVASCRIPT_LESS_FILE="assets/javascript/airquill.js.less"
+JAVASCRIPT_FILE="assets/javascript/airquill.js"
+JAVASCRIPT_MIN_FILE="assets/javascript/airquill.min.js"
+
+FONT_AWESOME_SOURCE="./node_modules/@fortawesome/fontawesome-free/webfonts"
+FONT_AWESOME_TARGET="./assets/webfonts/"
+
 fullBuild() {
     npmSetup;
     lessCompile;
     cssMinification;
+    jsCompile;
+    jsMinification;
+    installFonts;
     jekyllBuild;
 }
 
@@ -27,6 +37,23 @@ cssMinification() {
     node-minify --compressor cssnano --input $CSS_FILE --output $CSS_MIN_FILE
 }
 
+jsCompile() {
+    echo "Compiling Javascript"
+    lessc $JAVASCRIPT_LESS_FILE $JAVASCRIPT_FILE
+}
+
+jsMinification() {
+    echo "Minifying Javascript"
+    node-minify --compressor uglify-js --input $JAVASCRIPT_FILE --output $JAVASCRIPT_MIN_FILE
+}
+
+installFonts() {
+    echo "Installing fonts"
+    for fontFile in $FONT_AWESOME_SOURCE/*; do
+        cp -v "$fontFile" $FONT_AWESOME_TARGET;
+    done
+}
+
 jekyllBuild() {
     echo "Building site with Jekyll"
     jekyll build;
@@ -35,11 +62,13 @@ jekyllBuild() {
 displayUsage() {
     echo
     echo "Usage: $0"
-    echo " -h, --help   Display usage instructions"
-    echo " -l, --less   Compile less files"
-    echo " -c, --css    Minify CSS files"
-    echo " -n, --npm    Setup NPM"
-    echo " -j, --jekyll Build Jekyll"
+    echo " -h,  --help          Display usage instructions"
+    echo " -l,  --less          Compile less files"
+    echo " -c,  --css           Minify CSS files"
+    echo " -js, --javascript    Compile and Minify JS files"
+    echo " -n,  --npm           Setup NPM"
+    echo " -f,  --font          Install fonts"
+    echo " -j,  --jekyll        Build Jekyll"
     echo
 }
 
@@ -71,8 +100,17 @@ else
                 npmSetup
                 shift
                 ;;
+            -f|--fonts)
+                installFonts
+                shift
+                ;;
             -j|--jekyll)
                 jekyllBuild
+                shift
+                ;;
+            -js|--javascript)
+                jsCompile
+                jsMinification
                 shift
                 ;;
             *)
