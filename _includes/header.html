@@ -7,62 +7,67 @@
 <!--  navbar-fixed-top -->
 <nav class="main">
 	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<a class="logo d-sm-block" href="/">&nbsp;</a>
 
-        <a class="logo" href="/">&nbsp;</a>
-
-		<ul class="nav justify-content-end">
-			<li class="nav-item">
-				<a class="nav-link"  href="/posts/">Posts</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link"  href="/about/">About</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle"
-				   data-toggle="dropdown"
-				   href="#"
-				   role="button"
-				   aria-haspopup="true"
-				   aria-expanded="false">
-					<i class="fas fa-search"></i>
-				</a>
-				<div class="dropdown-menu">
-					<form class="navbar-form navbar-right" method="get" action="http://www.google.com/search" onsubmit="nav.search(this)">
-						<input class="form-control col-lg-12" name="q" placeholder="Search AirQuill" type="text">
-					</form>
-				</div>
-			</li>
-<!--			<li class="nav-item dropdown">-->
-<!--				<a class="nav-link dropdown-toggle"-->
-<!--				   data-toggle="dropdown"-->
-<!--				   href="#"-->
-<!--				   role="button"-->
-<!--				   aria-haspopup="true"-->
-<!--				   aria-expanded="false">-->
-<!--					<i class="fas fa-cog"></i>-->
-<!--				</a>-->
-<!--				<div class="dropdown-menu">-->
-<!--					<a class="nav-link" href="javascript:nav.setTheme('light');">-->
-<!--						<i class="fa fa-square theme-yellow"></i>&nbsp;-->
-<!--						<i class="fa fa-square theme-light-grey"></i>&nbsp;-->
-<!--						<i class="fa fa-square theme-light-grey"></i>&nbsp;-->
-<!--						Light theme-->
-<!--					</a>-->
-<!--					<a class="nav-link" href="javascript:nav.setTheme('white');">-->
-<!--						<i class="fa fa-square theme-white"></i>&nbsp;-->
-<!--						<i class="fa fa-square theme-white"></i>&nbsp;-->
-<!--						<i class="fa fa-square theme-light-grey"></i>&nbsp;-->
-<!--						White theme-->
-<!--					</a>-->
-<!--					<a class="nav-link" href="javascript:nav.setTheme('dark');">-->
-<!--						<i class="fa fa-square theme-dark-grey"></i>&nbsp;-->
-<!--						<i class="fa fa-square theme-dark-grey"></i>&nbsp;-->
-<!--						<i class="fa fa-square theme-dark-grey"></i>&nbsp;-->
-<!--						Dark theme-->
-<!--					</a>-->
-<!--				</div>-->
-<!--			</li>-->
-		</ul>
-
+<!--				<a class="logo tiny d-sm d-sm-none" href="/">&nbsp;</a>-->
+			</div>
+			<div class="col-lg-6 align-bottom">
+				<ul class="nav justify-content-end">
+					<li class="nav-item">
+						<a class="nav-link"  href="/posts/">Posts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/about/">About</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle"
+						   data-toggle="dropdown"
+						   href="#"
+						   role="button"
+						   aria-haspopup="true"
+						   aria-expanded="false">
+							<i class="fas fa-search"></i>
+						</a>
+						<div class="dropdown-menu">
+							<form class="navbar-form navbar-right" method="get" action="http://www.google.com/search" onsubmit="nav.search(this)">
+								<input class="form-control col-lg-12" name="q" placeholder="Search AirQuill" type="text">
+							</form>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle"
+						   data-toggle="dropdown"
+						   href="#"
+						   role="button"
+						   aria-haspopup="true"
+						   aria-expanded="false">
+							<i class="fas fa-cog"></i>
+						</a>
+						<div class="dropdown-menu">
+							<a class="nav-link" href="javascript:nav.setTheme('light');">
+								<i class="fa fa-square theme-yellow"></i>&nbsp;
+								<i class="fa fa-square theme-light-grey"></i>&nbsp;
+								<i class="fa fa-square theme-light-grey"></i>&nbsp;
+								Light theme
+							</a>
+							<a class="nav-link" href="javascript:nav.setTheme('white');">
+								<i class="fa fa-square theme-white"></i>&nbsp;
+								<i class="fa fa-square theme-white"></i>&nbsp;
+								<i class="fa fa-square theme-light-grey"></i>&nbsp;
+								White theme
+							</a>
+							<a class="nav-link" href="javascript:nav.setTheme('dark');">
+								<i class="fa fa-square theme-dark-grey"></i>&nbsp;
+								<i class="fa fa-square theme-dark-grey"></i>&nbsp;
+								<i class="fa fa-square theme-dark-grey"></i>&nbsp;
+								Dark theme
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </nav>

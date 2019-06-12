@@ -7,12 +7,15 @@ links:
  - link: /2014/06/29/storing-data-in-processes
    name: Storing data in automated business processes
 tags: [bpm]
+image: 
+  url: "/assets/images/posts/start-end.jpg"
+  title: "Getting the start and end right"
+  x: -50
+  y: -470
 location: "'s Hertogenbosch"
 excerpt: "It's essential to address the start and end of the business process at the very start of the project. And by address, I mean decide, specify and communicate."
 tldr: "Ask different people what *the process* is, and you’ll get as many answers as respondents. People’s views differ on what the process *is*, so they also have alternate views on what *constitutes its beginning* or which outcomes it may have. You need to address the start(s) and end(s) of the process by discussing, deciding, documenting and communicating them. It's worth the trouble."
 ---
-![Getting the start and end right][start-end]  
-
 This blogpost focuses on one of those things we all know, but too often don't practice when the situation arises: beginning at the start. What seems like a *no-brainer* is apparently far less than obvious. As with many things, if you start off on the wrong foot, what follows is much harder than it needs to be.
 
 It's essential to address the start and end of the business process at the very start of the project. And by address, I mean decide, specify and communicate.
@@ -63,5 +66,4 @@ Sound simple? Indeed, it is; and it's well worth it. All we need is to *just do 
 
 All beginnings are hard, but as the saying goes: a good beginning is half the battle. Make sure you get off to a good start and determine the start and end(s) of your process before you dig into the details of what happens inbetween. It's a surefire investment for the whole project.
 
-[start-end]: /assets/images/posts/start-end.jpg  "Getting the start and end right"
 [storing-data]: /2014/06/29/storing-data-in-processes "Storing data in automated business processes"

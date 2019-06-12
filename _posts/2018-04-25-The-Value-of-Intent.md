@@ -7,12 +7,15 @@ links:
  - link: /2015/12/06/all-beginnings-are-hard
    name: All Beginnings are Hard
 tags: [agile,bpm]
+image: 
+  url: "/assets/images/posts/pushpins-and-threads.jpg"
+  title: "Determining intent"
+  x: -10
+  y: -20
 location: "'s-Hertogenbosch"
 excerpt: "Define the intent of the process you are implementing. It will help you with design decisions."
 tldr: "Before you start implementing a business process and even start *thinking* about automating it, define the intent of the process first. It will help scope the boundaries of the process and make clear which responsibilities the process has and doesn't have. It will help prevent aiming for a moving target during design and implementation and enable impacting change as business goals evolve."
 ---
-![Determining intent][pushpins-and-threads]  
-
 Having trouble defining the scope of a business process or making design decisions at functional or technical levels? Try formulating the process' **intent**. This post discusses the *Value of Intent*. [(1)](#footnotes)
 
 ## Of beginnings and endings
@@ -105,7 +108,6 @@ Defining a process' intent brings us a greater understanding of why it exists. T
 [1]: http://www.dictionary.com/browse/intention?s=t "Intention"
 [2]: https://www.brainyquote.com/quotes/stephen_covey_636508 "Stephen Covey on BrainyQuote"
 [bpmn-method-and-style]: https://www.amazon.com/BPMN-Method-Style-levels-based-methodology/dp/0982368100 "BPMN Method and Style"
-[pushpins-and-threads]: /assets/images/posts/pushpins-and-threads.jpg  "Determining intent"
 [all-beginnings-are-hard]: /2015/12/06/all-beginnings-are-hard "All Beginnings are Hard"
 [hajoReijers]: https://twitter.com/profBPM "Hajo Reijers"
 [remcoDijkman]: https://twitter.com/rmdijkman "Remco Dijkman"
