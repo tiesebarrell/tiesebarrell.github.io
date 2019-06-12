@@ -5,14 +5,17 @@ redirect_from:
  - /2017/08/07/On-the-Road-Again.html
 links:
 tags: [misc]
+image: 
+  url: "/assets/images/posts/detective-plate.jpg"
+  title: "Detective"
+  x: -150
+  y: -5
 location: "'s Hertogenbosch"
 excerpt: "How international are our roads anyway?"
 seen: '<i class="fa fa-check-circle-o" aria-hidden="true" style="color: green"></i>'
 not-seen: '<i class="fa fa-times-circle-o" aria-hidden="true" style="color: red"></i>'
 numberSeen: 25
 ---
-![Detective][detective-plate]
-
 My work has me in the car quite a bit during the week. After a recent holiday that inspired this post, I'm now on the road again. To make some use of the time spent driving and mainly to have some fun, I decided to do a little experiment. I have noticed the EUs mantra of *free movement of people, goods, services and capital* has lead to an increased diversity in the origins of cars and trucks on our roads as witnessed in the variety of country codes on license plates of vehicles driving around. So how international are our roads anyway? I decided to do a completely unscientific, unreproducible and highly circumstantial count of all different country codes I can spot in one month.
 
 ## Rules of the road
@@ -101,5 +104,4 @@ Plates according to [wikipedia][wikipedia-plates].
 I managed to spot {{page.numberSeen}} of the 29 EU plates and about 10 others. Curiously, no Danes on the road. I did see a trailer a couple of times, but these were hauled by vehicles not registered in Denmark. So by my own rules...
 
 [wikipedia-plates]: https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Europe "Vehicle registration plates of Europe"
-[detective-plate]: /assets/images/posts/detective-plate.jpg "Detective"
 [nl-blue]: https://en.m.wikipedia.org/wiki/Vehicle_registration_plates_of_the_Netherlands "Vehicle registration plates of the Netherlands"

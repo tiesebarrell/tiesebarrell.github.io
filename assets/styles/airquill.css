@@ -32,6 +32,7 @@ nav.main {
   min-height: 99px;
 }
 nav.main ul.nav {
+  margin-top: 4ex;
   position: relative;
 }
 nav.main a.nav-link {
@@ -40,11 +41,14 @@ nav.main a.nav-link {
 nav.main .dropdown-toggle:after {
   content: none;
 }
+nav.main .navigation-cell {
+  vertical-align: bottom;
+}
 nav.main a.logo {
   display: block;
   height: 93px;
-  width: 424px;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 section.main {
   margin-top: 33px;
@@ -58,7 +62,14 @@ section.main a:hover {
 section.main .post-summary {
   margin-bottom: 3ex;
 }
-section.main .post-summary-bar {
+section.main .post-summary .post-summary-image {
+  min-height: 15ex;
+  background-repeat: no-repeat;
+}
+section.main .post-summary .post-summary-content {
+  padding: 2.5ex 1.5em;
+}
+section.main .post-summary .post-summary-bar {
   vertical-align: middle;
   line-height: 33px;
 }
@@ -76,6 +87,9 @@ body.theme-light nav.main li a.nav-link:hover {
 body.theme-light nav.main a.logo {
   background-image: url("/assets/images/airquill-logo-light.png");
 }
+body.theme-light nav.main a.logo.tiny {
+  background-image: url("/assets/images/airquill-logo-white.png");
+}
 body.theme-light section.main a {
   color: #333333;
 }
@@ -83,8 +97,14 @@ body.theme-light section.main .post-summary .post-summary-content {
   background-color: #e6e6e6;
   color: #333333;
 }
+body.theme-light section.main .post-summary .post-summary-content:hover {
+  background-color: #cdcdcd;
+}
 body.theme-light section.main .post-summary .post-summary-bar {
   background-color: #d9d9d9;
+}
+body.theme-light section.main .post-summary .post-summary-bar:hover {
+  background-color: #c0c0c0;
 }
 body.theme-white nav.main {
   background: url("/assets/images/lifted-square-pattern-white.png") repeat;
@@ -97,7 +117,7 @@ body.theme-white nav.main li a.nav-link:hover {
   color: #333333;
 }
 body.theme-white nav.main a.logo {
-  background-image: url("/assets/images/airquill-logo-dark.png");
+  background-image: url("/assets/images/airquill-logo-white.png");
 }
 body.theme-dark nav.main {
   background: url("/assets/images/lifted-square-pattern-dark.png") repeat;
@@ -110,7 +130,7 @@ body.theme-dark nav.main li a.nav-link:hover {
   color: #ffff00;
 }
 body.theme-dark nav.main a.logo {
-  background-image: url("/assets/images/airquill-logo-light.png");
+  background-image: url("/assets/images/airquill-logo-dark.png");
 }
 .box {
   color: #ff0000;

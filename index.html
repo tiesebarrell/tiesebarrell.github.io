@@ -3,8 +3,8 @@ layout: default
 ---
 
 {% for post in site.posts limit:5 %}
-<div class="row post-summary" style="background-color: #f7f7f7">
-    <div class="col-md-12 post-summary-content">
+<div class="row post-summary">
+    <div class="col-md-8 post-summary-content">
     	<h2>
       		<a href="{{ post.url }}">{{ post.title }}</a>
      	</h2>
@@ -12,12 +12,17 @@ layout: default
      	  {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>'}}
       </p>
     </div>
+	<div
+			class="col-md-4 post-summary-image"
+			title="{{ page.image.title }}"
+			style="background-image:url('{{ post.image.url }}'); background-position: {{post.image.x}}px {{post.image.y}}px;">
+	</div>
 	<div class="col-md-6 small post-summary-bar">
 		Posted {{ post.date | date_to_long_string }} in {{ post.tags | array_to_sentence_string }}
 	</div>
 	<div class="col-md-6 small post-summary-bar">
 		<p class="pull-right">
-			<a href="{{ post.url }}"><i class="fas fa-chevron-circle-right">&nbsp;</i>Read more</a>
+			<a href="{{ post.url }}"><i class="fas fa-caret-square-right">&nbsp;</i>Read more</a>
 		</p>
 	</div>
 </div>

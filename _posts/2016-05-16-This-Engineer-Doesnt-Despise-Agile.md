@@ -7,12 +7,15 @@ links:
  - link: https://age-of-product.com/engineers-despise-agile/
    name: Why Engineers Despise Agile
 tags: [agile,tech]
+image: 
+  url: "/assets/images/posts/balance.jpg"
+  title: "Balance"
+  x: -450
+  y: -100
 location: "'s Hertogenbosch"
 excerpt: "Agile working is not without its own problems. That doesn't mean that engineers necessarily dislike it for what it offers."
 tldr: "I don't believe engineers despise agile, but generally appreciate what it tries to accomplish. Like any way of working, it's hard to get right, takes a lot of effort and will continue to do so as the world around the team evolves. Don't blame the method if you're struggling. You get a new chance to improve every 2 or so weeks."
 ---
-![Balance][balance]
-
 I recently read the post [Why Engineers Despise Agile][why-engineers-despise-agile]. It contains a lot of valid points about agile, none of which however have made [*this* engineer][about] come to despise agile. Let me explain why by going through the categories mentioned in the article: control, manipulation, monitoring, technology and teamwork.
 
 ## Control
@@ -73,6 +76,5 @@ This doesn't mean agile doesn't have drawbacks or is the silver bullet for any d
 
 As for the article, maybe a better title would have been "Why Engineers Despise Poor Agile Implementations". 
 
-[balance]: /assets/images/posts/balance.jpg  "Balance"
 [why-engineers-despise-agile]: https://age-of-product.com/engineers-despise-agile/ "Why Engineers Despise Agile"
 [about]: /about.html "About"
