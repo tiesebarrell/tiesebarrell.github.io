@@ -14,15 +14,19 @@ layout: default
     </div>
 	<div
 			class="col-md-4 post-summary-image"
-			title="{{ page.image.title }}"
 			style="background-image:url('{{ post.image.url }}'); background-position: {{post.image.x}}px {{post.image.y}}px;">
 	</div>
-	<div class="col-md-6 small post-summary-bar">
-		Posted {{ post.date | date_to_long_string }} in {{ post.tags | array_to_sentence_string }}
+	<div class="col-md-4 post-summary-bar">
+		<i class="fas fa-pen-square">&nbsp;</i>
+		Posted {{ post.date | date_to_long_string }}
 	</div>
-	<div class="col-md-6 small post-summary-bar">
-		<p class="pull-right">
-			<a href="{{ post.url }}"><i class="fas fa-caret-square-right">&nbsp;</i>Read more</a>
+	<div class="col-md-4 post-summary-bar">
+		<i class="fas fa-tags">&nbsp;</i>
+		{{ post.tags | array_to_sentence_string }}
+	</div>
+	<div class="col-md-4 post-summary-bar">
+		<p>
+			<a href="{{ post.url }}"><i class="fas fa-caret-square-right">&nbsp;</i>Read this post</a>
 		</p>
 	</div>
 </div>
