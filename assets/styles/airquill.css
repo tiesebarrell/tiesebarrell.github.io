@@ -70,8 +70,9 @@ section.main .post-summary .post-summary-content {
   padding: 2.5ex 1.5em;
 }
 section.main .post-summary .post-summary-bar {
-  vertical-align: middle;
-  line-height: 33px;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.5em;
 }
 body.theme-light nav.main {
   background: url("/assets/images/lifted-square-pattern-dark.png") repeat;
