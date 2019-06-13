@@ -1,13 +1,16 @@
 ---
 layout: post
-title: There is no Execution Model
+title: There is no execution model
 tags: [bpm]
-location: "'s-Hertogenbosch"
-excerpt: "TODO"
-tldr: "TODO"
+image:
+  url: "/assets/images/posts/process-automation.jpg"
+  title: "Executable model"
+  x: -100
+  y: -150
+location: "Vught"
+excerpt: "You will have abstractions. You will have different models for the same process. But there is no 'execution model'."
+tldr: "It is unhelpful to distinguish between a 'business model' and an 'execution model' when working with business process models. We want to hide technical details from the model that is executed. It also doesn't make sense to define functional models only to an abstract level before they are implemented in software. We model to capture understanding. We should aim to implement models as closely as possible to our understanding. Having abstract models is useful, if they are complete and consistent with the detailed ones. Detail your models to include all of the activities, events and alternative paths that need to be handled. These details need to be known to implement the process, with or without software support. It is this business process model that is executed in the system."
 ---
-![Executable model][executable-model]
-
 When business processes are to be executed by automated software components, there is an interesting notion that tends to pop up in the conversations around the design of the process models. It takes various forms, such as this statement:
 
 > "I'm sure this model will look different when we move to the execution model."
@@ -34,9 +37,7 @@ This does not magically happen, of course. Because zero-code business process ma
 
 ## Levels of abstraction
 
-It's not that simple, of course. In many cases, the business model is not executable. This happens when the model has a different abstraction level. These kinds of abstract models are often created in the exploratory or experimental phase, where they are extremely useful because different audiences have different levels of interest in details. 
-
-TODO there is scientific evidence that shows this - see 2019022001 and references 
+It's not that simple, of course. In many cases, the business model is not executable. This happens when the model has a different abstraction level. These kinds of abstract models are often created in the exploratory or experimental phase, where they are extremely useful because different audiences have different levels of interest in details. There is [scientific evidence that shows this][2019022001] (see pattern 9 - Omission and pattern 10 - Collapse).
 
 These more abstract models are not meant to deal with all of the particulars (think of activities and events) needed for execution, but instead focus on conveying the big(ger) picture. That's what the abstraction is for: not having to worry about the details, **yet**. The *yet* in that sentence is essential. To be able to execute, the details are needed eventually. We need to know all of the activities that are performed, whether automatically or manually and the circumstances (events) that might occur along the way which we should account for. We also need to know about specific exceptional or alternative paths that are supported. Having business process models that never reach that level of detail is not sufficient and thus not acceptable. While we explore our options and the architecture of our process models at more abstract levels, it is helpful to omit some details, but to truly implement the process and make it executable (even without software!), the details are required. This is a functional requirement, not a technical one; it just so happens that implementation in software has the same requirement.
 
@@ -56,15 +57,14 @@ Our process models should not abstract any of the relevant details. They should 
 
 How about error handling? Consider the cases you need to account for. Are they handled in a specific way, flow wise? In other words: do we define a way to deal with them at the functional level, by specifying which activities are performed if they occur? If so, model them in your process (at least in the [fully detailed abstraction level][silver-level-2], depending on the audience and the importance). Functional handling of these cases belongs in the process model. If the power goes out in the data center, then what? Revert to the default behaviour of your process execution tooling, which should be: transaction cannot be committed, so roll back to last known correct state. Continue after resolution of the error by re-attempting. This has nothing to do with the process, we still want to handle this in the same way. No alternative path is defined for this in the process.
 
-## There is execution, but no execution model TODO
+## Execution, without execution model
 
-We may need different views on our processes, showing different levels of abstraction. We require that these models are consistent, especially where they interact in the process architecture. Despite different views, there ultimately is a business process model that can be traced from inception to technical execution. 
+We may need different views on our processes, showing different levels of abstraction. We require that these models are consistent, especially where they interact with other processes in the process architecture. Despite having different views, ultimately there is a business process model that can be traced from inception to technical execution.
 
-Our models collectively detail all of the activities we recognise, including alternative paths that may be followed, any events we must respond to and how each model collaborates with others. We need that level of detail because it specifies how the process is handled: what we (don't do) and when we do that.
+Our models collectively detail all of the activities we recognise, including alternative paths that may be followed, any events we must respond to and how each model collaborates with others. We need that level of detail because it specifies how the process is handled: what we (don't) do and when we do it.
 
-We aim for a close relationship between the execution of a process and the functional design thereof. There is no reason why the process models we execute should look any different than the business perception of those processes - we are executing the business process. So even though there is no execution model, we will gladly take an appropriately designed model and execute it.
+We aim for a close relationship between the execution of a process and the functional design thereof. There is no reason why the process models we execute should look any different from the business' perception of those processes - we are executing the business process. So even though there is no *execution model*, we will gladly take an appropriately designed model and execute it.
 
-[executable-model]: /assets/images/posts/process-automation.jpg  "Executable model"
 [models-wrong-useful]: https://www.quotes.net/quote/58494 "Essentially, all models are wrong, but some are useful."
 [domain-driven-design]: http://dddcommunity.org/learning-ddd/what_is_ddd/ "What is Domain-Driven Design?"
 [developer-friendly-bpm]: https://assets.contentful.com/vpidbgnakfvf/6p6BMD74WWEcGGGq2cS0AS/918c367d9ed94070ad95886b651c1cac/Developer-Friendly_BPM.pdf "Developer-friendly Business Process Management"
@@ -76,3 +76,4 @@ We aim for a close relationship between the execution of a process and the funct
 [dmn]: http://www.dmn.org "https://www.omg.org/dmn/"
 [silver-level-2]: https://methodandstyle.com/three-levels-of-process-modeling-with-bpmn/ "Three Levels of Process Modeling with BPMN"
 [7pmg]: https://research.tue.nl/en/publications/seven-process-modeling-guidelines-7pmg "Seven process modeling guidelines (7PMG)"
+[2019022001]: https://www.researchgate.net/publication/220366206_Managing_Process_Model_Complexity_Via_Abstract_Syntax_Modifications "Managing Process Model Complexity via Abstract Syntax Modifications"
