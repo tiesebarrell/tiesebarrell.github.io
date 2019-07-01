@@ -5,11 +5,17 @@
  * AirQuill v2.0.0 (https://airquill.io/)
  */
 
+@import "airquill.core.less";
+@import "airquill.theme.light.less";
+@import "airquill.theme.dark.less";
+@import "airquill.theme.white.less";
+
 @base: #ff0000;
 @section-offset: 33px;
 
 @white: #ffffff;
 @yellow: #ffff00;
+@grey-light-ultra: #f2f2f2;
 @grey-light: #e6e6e6;
 @grey-middle: #666666;
 @grey-dark: #333333;
@@ -18,9 +24,11 @@
 @logo-light: "/assets/images/airquill-logo-light.png";
 @logo-white: "/assets/images/airquill-logo-white.png";
 @logo-dark: "/assets/images/airquill-logo-dark.png";
+@icon-yellow: "/assets/images/airquill-icon-yellow.png";
 @square-pattern-dark: "/assets/images/lifted-square-pattern-dark.png";
 @square-pattern-light: "/assets/images/lifted-square-pattern-light.png";
 @square-pattern-white: "/assets/images/lifted-square-pattern-white.png";
+@lined-square-pattern-light: "/assets/images/lined-square-pattern-light.png";
 
 @post-summary-hover-factor: 10%;
 @post-summary-bar-factor: 5%;
@@ -45,158 +53,6 @@
 .theme-black {
   color: @black;
 }
-
-nav.main {
-  min-height: 99px;
-
-  ul.nav {
-    margin-top: 4ex;
-    position: relative;
-  }
-
-  a.nav-link {
-    white-space: nowrap;
-  }
-
-  .dropdown-toggle:after {
-    content: none;
-  }
-
-  .navigation-cell {
-    vertical-align: bottom;
-  }
-
-  a.logo {
-    display: block;
-    height: 93px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-}
-
-section.main {
-  margin-top: @section-offset;
-
-  a {
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .post-summary {
-    margin-bottom: 3ex;
-
-    .post-summary-image {
-      min-height: 15ex;
-      background-repeat: no-repeat;
-    }
-
-    .post-summary-content {
-      padding: 2.5ex 1.5em;
-    }
-
-    .post-summary-bar {
-      height: 3rem;
-      line-height: 3rem;
-      padding: 0 1.5em;
-    }
-  }
-}
-
-body.theme-light {
-  nav.main {
-    background: url(@square-pattern-dark) repeat;
-    padding: 9px;
-
-    li a.nav-link {
-      color: @grey-dark;
-      background-color: @grey-light;
-
-      &:hover {
-        background-color: @yellow;
-      }
-    }
-
-    a.logo {
-      background-image: url(@logo-light);
-
-      &.tiny {
-        background-image: url(@logo-white);
-      }
-
-    }
-  }
-
-  section.main {
-
-    a {
-      color: @grey-dark;
-    }
-
-    .post-summary {
-
-      .post-summary-content {
-        background-color: @grey-light;
-        color: @grey-dark;
-
-        &:hover {
-          background-color: darken(@grey-light, @post-summary-hover-factor);
-        }
-      }
-
-      .post-summary-bar {
-        background-color: darken(@grey-light, @post-summary-bar-factor);
-
-        &:hover {
-          background-color: darken(@grey-light, @post-summary-bar-hover-factor);
-        }
-      }
-    }
-  }
-}
-
-body.theme-white {
-  nav.main {
-    background: url(@square-pattern-white) repeat;
-
-    li a.nav-link {
-      color: @grey-light;
-      background-color: @white;
-
-      &:hover {
-        color: @grey-dark;
-      }
-    }
-
-    a.logo {
-      background-image: url(@logo-white);
-    }
-  }
-}
-
-body.theme-dark {
-  nav.main {
-    background: url(@square-pattern-dark) repeat;
-
-    li a.nav-link {
-      color: @grey-dark;
-      background-color: @black;
-
-      &:hover {
-        color: @yellow;
-      }
-    }
-
-    a.logo {
-      background-image: url(@logo-dark);
-    }
-  }
-}
-
-
 
 .box-shadow(@style, @c) when (iscolor(@c)) {
   -webkit-box-shadow: @style @c;
@@ -256,11 +112,6 @@ a.profile i {
 
 .container.post p {
   text-align: justify;
-}
-
-.footer-link {
-  color: #808080;
-  text-decoration: underline;
 }
 
 .footer-link:hover {

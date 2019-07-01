@@ -17616,22 +17616,103 @@ return jQuery;
  */
 
 /**
- * Module 'nav'.
+ * Module 'theme'.
  */
 
-var nav = (function() {
+var theme = (function() {
 
     var selectors = {
-        "default" : "theme-default",
         "light" : "theme-light",
         "white" : "theme-white",
         "dark" : "theme-dark"
     };
 
-    function setThemeInternal(themeName) {
-        //alert(themeName + ": " + selectors[themeName]);
-        $("body").attr('class', selectors[themeName]);
+    function setThemeInternal(themeId) {
+        $("body").attr('class', themeId);
     }
+
+    function chooseThemeInternal(themeName) {
+        var themeId = selectors[themeName];
+        setThemeInternal(themeId);
+        schedulePreferencesPrompt(themeId);
+    }
+
+    function schedulePreferencesPrompt (themeId) {
+        window.setTimeout(function() {
+            preferencesPrompt(themeId);
+        }, 3333);
+    }
+
+    function preferencesPrompt (themeId) {
+        $('#themeToast').toast('show');
+        // var answer = confirm("You changed the theme. We hope you like the new look. Would you like to store it for your future visits?");
+        // if (answer == true) {
+        //     preferences.storeTheme(themeId);
+        // }
+    }
+
+    return {
+        applyTheme: function() {
+            var themeId = preferences.getTheme();
+            if (themeId !== null) {
+                setThemeInternal(themeId);
+            }
+        },
+
+        chooseTheme: function(themeName) {
+            chooseThemeInternal(themeName);
+        }
+    };
+
+})();
+
+
+
+/**
+ * Module 'preferences'.
+ */
+
+var preferences = (function() {
+
+    var preferences = {
+        "theme" : "theme"
+    };
+
+    function localStorageSupported() {
+        return typeof(Storage) !== "undefined";
+    }
+
+    function storeThemeInternal(themeId) {
+        localStorage.setItem(preferences.theme, themeId);
+    }
+
+    function getThemeInternal() {
+        if (localStorageSupported()){
+            return localStorage.getItem(preferences.theme);
+        } else {
+            return null;
+        }
+    }
+
+    return {
+        storeTheme: function(themeId) {
+            storeThemeInternal(themeId);
+        },
+
+        getTheme: function() {
+            return getThemeInternal();
+        }
+    };
+
+})();
+
+
+
+/**
+ * Module 'nav'.
+ */
+
+var nav = (function() {
 
     function searchInternal(scope) {
         scope.q.value = scope.q.value + " site:airquill.io";
@@ -17639,8 +17720,7 @@ var nav = (function() {
 
     return {
         setTheme: function(themeName) {
-            //alert("This function is not implemented just yet, sorry :)");
-            setThemeInternal(themeName);
+            theme.chooseTheme(themeName);
         },
 
         search: function(scope) {
@@ -17648,4 +17728,16 @@ var nav = (function() {
         }
     };
 
+})();
+
+/**
+ * Module 'core'.
+ */
+
+var core = (function() {
+
+})();
+
+(function(){
+    theme.applyTheme();
 })();

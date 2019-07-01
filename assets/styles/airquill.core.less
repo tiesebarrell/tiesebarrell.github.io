@@ -1,0 +1,93 @@
+nav.main {
+  border-top: 9px solid @yellow;
+  min-height: 99px;
+
+  ul.nav {
+    margin-top: 4ex;
+    position: relative;
+  }
+
+  a.nav-link {
+    white-space: nowrap;
+  }
+
+  .dropdown-toggle:after {
+    content: none; // removes default caret for dropdown menus
+  }
+
+  .navigation-cell {
+    vertical-align: bottom;
+  }
+
+  a.logo {
+    display: block;
+    height: 93px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+}
+
+section.main {
+  margin-top: @section-offset;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .post-summary {
+    margin-bottom: 3ex;
+
+    //.fas {
+    //  font-size: 1.5em;
+    //}
+
+    .post-summary-image {
+      min-height: 15ex;
+      background-repeat: no-repeat;
+    }
+
+    .post-summary-content {
+      padding: 2.5ex 1.5em;
+    }
+
+    .post-summary-bar {
+      height: 3em;
+      line-height: 3em;
+      padding: 0 1.5em;
+    }
+  }
+}
+
+footer {
+
+  margin-top: 9ex;
+  border-bottom: 9px solid @yellow;
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  div.container > div.row:first-of-type {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+
+  .icon {
+    min-height: 32px;
+    background-repeat: no-repeat;
+  }
+
+  .row {
+    padding: 3.33ex 3.33em;
+  }
+
+}

@@ -1,0 +1,39 @@
+body.theme-white {
+  nav.main {
+    background: url(@square-pattern-white) repeat;
+
+    li a.nav-link {
+      color: @grey-light;
+      background-color: @white;
+
+      &:hover {
+        color: @grey-dark;
+      }
+    }
+
+    a.logo {
+      background-image: url(@logo-white);
+    }
+  }
+
+  footer {
+    color: @grey-dark;
+    background-color: @grey-light-ultra;
+
+    a {
+      color: @yellow;
+    }
+
+    > div {
+      border-bottom-color: @grey-light;
+    }
+
+    .icon {
+      background-image: url(@icon-yellow);
+    }
+
+    //.footer-line {
+    //  background-image: url(@lined-square-pattern-light);
+    //}
+  }
+}

@@ -1,17 +1,9 @@
-<div class="container-fluid stripe" style="height: 9px; background-color: #ffff00;">
-	<div class="row">
-		<div class="col-12" >&nbsp;</div>
-	</div>
-</div>
-
 <!--  navbar-fixed-top -->
 <nav class="main">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
 				<a class="logo d-sm-block" href="/">&nbsp;</a>
-
-<!--				<a class="logo tiny d-sm d-sm-none" href="/">&nbsp;</a>-->
 			</div>
 			<div class="col-lg-6 align-bottom">
 				<ul class="nav justify-content-end">
@@ -30,7 +22,7 @@
 						   aria-expanded="false">
 							<i class="fas fa-search"></i>
 						</a>
-						<div class="dropdown-menu">
+						<div class="dropdown-menu dropdown-menu-right">
 							<form class="navbar-form navbar-right" method="get" action="http://www.google.com/search" onsubmit="nav.search(this)">
 								<input class="form-control col-lg-12" name="q" placeholder="Search AirQuill" type="text">
 							</form>
@@ -45,7 +37,7 @@
 						   aria-expanded="false">
 							<i class="fas fa-cog"></i>
 						</a>
-						<div class="dropdown-menu">
+						<div class="dropdown-menu dropdown-menu-right">
 							<a class="nav-link" href="javascript:nav.setTheme('light');">
 								<i class="fa fa-square theme-yellow"></i>&nbsp;
 								<i class="fa fa-square theme-light-grey"></i>&nbsp;
@@ -70,4 +62,24 @@
 			</div>
 		</div>
 	</div>
+	<div aria-live="polite" aria-atomic="true" style="position: relative; z-index: 1000">
+		<div id="themeToast" class="toast" data-autohide="false" style="position: absolute; top: 0; right: 0;">
+			<div class="toast-header">
+				<i class="fas fa-check-square">&nbsp;</i>
+				<strong class="mr-auto">Theme changed</strong>
+				<small>TODO</small>
+				<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="toast-body">
+				You changed the theme, nice! We hope you like the new look. Would you like to store it for your future visits?
+			</div>
+			<div class="toast-footer">
+				<button type="button" class="btn btn-success">Sure, thanks</button>
+				<button type="button" class="btn btn-danger">Nah, maybe some other time</button>
+			</div>
+		</div>
+	</div>
 </nav>
+

@@ -25,6 +25,10 @@ exclude: [
   "assets/styles/airquill.less",
   "assets/styles/airquill.css",
   "assets/javascript/airquill.js",
+  "assets/javascript/airquill-core.js",
+  "assets/javascript/airquill-nav.js",
+  "assets/javascript/airquill-preferences.js",
+  "assets/javascript/airquill-theme.js",
   "assets/javascript/airquill.js.less",
   "assets/images/*.svg",
   "node_modules"

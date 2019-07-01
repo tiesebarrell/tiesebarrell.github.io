@@ -13,22 +13,8 @@
 /*!
  * AirQuill v2.0.0 (https://airquill.io/)
  */
-.theme-white {
-  color: #ffffff;
-}
-.theme-yellow {
-  color: #ffff00;
-}
-.theme-grey-light {
-  color: #e6e6e6;
-}
-.theme-grey-dark {
-  color: #333333;
-}
-.theme-black {
-  color: #000000;
-}
 nav.main {
+  border-top: 9px solid #ffff00;
   min-height: 99px;
 }
 nav.main ul.nav {
@@ -70,12 +56,33 @@ section.main .post-summary .post-summary-content {
   padding: 2.5ex 1.5em;
 }
 section.main .post-summary .post-summary-bar {
-  height: 3rem;
-  line-height: 3rem;
+  height: 3em;
+  line-height: 3em;
   padding: 0 1.5em;
 }
+footer {
+  margin-top: 9ex;
+  border-bottom: 9px solid #ffff00;
+}
+footer a {
+  text-decoration: underline;
+}
+footer a:hover {
+  text-decoration: none;
+}
+footer div.container > div.row:first-of-type {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+footer .icon {
+  min-height: 32px;
+  background-repeat: no-repeat;
+}
+footer .row {
+  padding: 3.33ex 3.33em;
+}
 body.theme-light nav.main {
-  background: url("/assets/images/lifted-square-pattern-dark.png") repeat;
+  background: url("/assets/images/lifted-square-pattern-light.png") repeat;
   padding: 9px;
 }
 body.theme-light nav.main li a.nav-link {
@@ -88,24 +95,51 @@ body.theme-light nav.main li a.nav-link:hover {
 body.theme-light nav.main a.logo {
   background-image: url("/assets/images/airquill-logo-light.png");
 }
-body.theme-light nav.main a.logo.tiny {
-  background-image: url("/assets/images/airquill-logo-white.png");
-}
 body.theme-light section.main a {
   color: #333333;
 }
 body.theme-light section.main .post-summary .post-summary-content {
-  background-color: #e6e6e6;
-  color: #333333;
+  background-color: #f2f2f2;
+  color: #666666;
 }
 body.theme-light section.main .post-summary .post-summary-content:hover {
-  background-color: #cdcdcd;
-}
-body.theme-light section.main .post-summary .post-summary-bar {
   background-color: #d9d9d9;
 }
+body.theme-light section.main .post-summary .post-summary-bar {
+  background-color: #e5e5e5;
+}
 body.theme-light section.main .post-summary .post-summary-bar:hover {
-  background-color: #c0c0c0;
+  background-color: #cccccc;
+}
+body.theme-light footer {
+  color: #666666;
+  background-color: #f2f2f2;
+}
+body.theme-light footer a {
+  color: #ffff00;
+}
+body.theme-light footer div.container > div.row:first-of-type {
+  border-bottom-color: #666666;
+}
+body.theme-light footer .icon {
+  background-image: url("/assets/images/airquill-icon-yellow.png");
+}
+body.theme-dark {
+  background-color: #000000;
+}
+body.theme-dark nav.main {
+  background: url("/assets/images/lifted-square-pattern-dark.png") repeat;
+  padding: 9px;
+}
+body.theme-dark nav.main li a.nav-link {
+  color: #666666;
+  background-color: #000000;
+}
+body.theme-dark nav.main li a.nav-link:hover {
+  background-color: #f2f2f2;
+}
+body.theme-dark nav.main a.logo {
+  background-image: url("/assets/images/airquill-logo-dark.png");
 }
 body.theme-white nav.main {
   background: url("/assets/images/lifted-square-pattern-white.png") repeat;
@@ -120,18 +154,33 @@ body.theme-white nav.main li a.nav-link:hover {
 body.theme-white nav.main a.logo {
   background-image: url("/assets/images/airquill-logo-white.png");
 }
-body.theme-dark nav.main {
-  background: url("/assets/images/lifted-square-pattern-dark.png") repeat;
-}
-body.theme-dark nav.main li a.nav-link {
+body.theme-white footer {
   color: #333333;
-  background-color: #000000;
+  background-color: #f2f2f2;
 }
-body.theme-dark nav.main li a.nav-link:hover {
+body.theme-white footer a {
   color: #ffff00;
 }
-body.theme-dark nav.main a.logo {
-  background-image: url("/assets/images/airquill-logo-dark.png");
+body.theme-white footer > div {
+  border-bottom-color: #e6e6e6;
+}
+body.theme-white footer .icon {
+  background-image: url("/assets/images/airquill-icon-yellow.png");
+}
+.theme-white {
+  color: #ffffff;
+}
+.theme-yellow {
+  color: #ffff00;
+}
+.theme-grey-light {
+  color: #e6e6e6;
+}
+.theme-grey-dark {
+  color: #333333;
+}
+.theme-black {
+  color: #000000;
 }
 .box {
   color: #ff0000;
@@ -178,10 +227,6 @@ a.profile i {
 }
 .container.post p {
   text-align: justify;
-}
-.footer-link {
-  color: #808080;
-  text-decoration: underline;
 }
 .footer-link:hover {
   text-decoration: none;

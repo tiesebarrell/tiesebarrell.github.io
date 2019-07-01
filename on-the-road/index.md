@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: On the Road
 platesEu: 27
 platesOther: 13
