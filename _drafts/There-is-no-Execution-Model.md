@@ -31,9 +31,9 @@ Many of these processes today are highly automated or at the least supported by 
 
 ## Towards execution
 
-We wish to power our automation of business processes with software that is not only specialised in this  function, but is also driven by actual process models we can reason about and design. To truly create a system that matches the business process, we should execute the models of the business processes and change them when the business process also changes.
+We wish to power our automation of business processes with software that is not only specialised in this function, but is also driven by actual process models we can reason about and design. To truly create a system that matches the business process, we should execute the models of the business processes and change them when the business process also changes. This "[ensures the models you are discussing with your colleagues are 100% definitely the ones currently running in production][business-process-collaboration]".
 
-This does not magically happen, of course. Because zero-code business process management is [mainly a fallacy][developer-friendly-bpm], we have real work to do to make things work. Good, straight-up, technical work. At the same time, we must keep in mind we are automating the *business process*. So, the business model we have *is* the execution model; it's the model we turn into working software. The model that is executed is an enrichment of the business process model with the technical configuration to make it work in an automated way.
+This does not magically happen, of course. Because zero-code business process management is [mainly a fallacy][developer-friendly-bpm] or at least appropriate only to specific use cases, we have real work to do to make things work. Good, straight-up, technical work. At the same time, we must keep in mind we are automating the *business process*. So, the business model we have *is* the execution model; it's the model we turn into working software. The model that is executed is an enrichment of the business process model with the technical configuration to make it work in an automated way.
 
 ## Levels of abstraction
 
@@ -77,3 +77,4 @@ We aim for a close relationship between the execution of a process and the funct
 [silver-level-2]: https://methodandstyle.com/three-levels-of-process-modeling-with-bpmn/ "Three Levels of Process Modeling with BPMN"
 [7pmg]: https://research.tue.nl/en/publications/seven-process-modeling-guidelines-7pmg "Seven process modeling guidelines (7PMG)"
 [2019022001]: https://www.researchgate.net/publication/220366206_Managing_Process_Model_Complexity_Via_Abstract_Syntax_Modifications "Managing Process Model Complexity via Abstract Syntax Modifications"
+[business-process-collaboration]: https://blog.camunda.com/post/2019/05/meet-cawemo-the-business-process-collaboration-hub/ "Please meet Cawemo - the Collaboration Hub for Business Process Automation"
