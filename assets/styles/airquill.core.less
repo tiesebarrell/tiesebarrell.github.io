@@ -1,4 +1,13 @@
+/* TODO: needed or just set default differently? */
+.link-style {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
 nav.main {
+  .link-style();
+
   border-top: 9px solid @yellow;
   min-height: 99px;
 
@@ -26,6 +35,35 @@ nav.main {
     background-size: contain;
   }
 
+}
+
+main {
+  p a {
+    text-decoration: underline;
+  }
+
+  img.profile {
+    border-width: 4px;
+    border-style: solid;
+    margin-left: 3em;
+    width: 64px;
+    height: 64px;
+  }
+}
+
+main.container {
+  margin-top: @section-offset * 2;
+
+  h1 {
+    margin-bottom: 1.5ex;
+  }
+
+  .about-badges {
+    .link-style();
+    margin-top: 3ex;
+    font-size: 180%;
+    text-align: center;
+  }
 }
 
 section.main {
@@ -68,11 +106,18 @@ footer {
   margin-top: 9ex;
   border-bottom: 9px solid @yellow;
 
+  h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 3ex;
+    margin-bottom: 2ex;
+  }
+
   a {
-    text-decoration: underline;
+    text-decoration: none;
 
     &:hover {
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
 

@@ -13,9 +13,16 @@
 /*!
  * AirQuill v2.0.0 (https://airquill.io/)
  */
+/* TODO: needed or just set default differently? */
+.link-style a:hover {
+  text-decoration: none;
+}
 nav.main {
   border-top: 9px solid #ffff00;
   min-height: 99px;
+}
+nav.main a:hover {
+  text-decoration: none;
 }
 nav.main ul.nav {
   margin-top: 4ex;
@@ -35,6 +42,30 @@ nav.main a.logo {
   height: 93px;
   background-repeat: no-repeat;
   background-size: contain;
+}
+main p a {
+  text-decoration: underline;
+}
+main img.profile {
+  border-width: 4px;
+  border-style: solid;
+  margin-left: 3em;
+  width: 64px;
+  height: 64px;
+}
+main.container {
+  margin-top: 66px;
+}
+main.container h1 {
+  margin-bottom: 1.5ex;
+}
+main.container .about-badges {
+  margin-top: 3ex;
+  font-size: 180%;
+  text-align: center;
+}
+main.container .about-badges a:hover {
+  text-decoration: none;
 }
 section.main {
   margin-top: 33px;
@@ -64,11 +95,17 @@ footer {
   margin-top: 9ex;
   border-bottom: 9px solid #ffff00;
 }
+footer h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 3ex;
+  margin-bottom: 2ex;
+}
 footer a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 footer a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 footer div.container > div.row:first-of-type {
   border-bottom-width: 1px;
@@ -81,8 +118,17 @@ footer .icon {
 footer .row {
   padding: 3.33ex 3.33em;
 }
+body.theme-light main {
+  color: #1f1f1f;
+}
+body.theme-light main a {
+  color: #666666;
+}
+body.theme-light main img.profile {
+  border-color: #e6e6e6;
+}
 body.theme-light nav.main {
-  background: url("/assets/images/lifted-square-pattern-light.png") repeat;
+  background: url("/assets/images/lifted-square-pattern-dark.png") repeat;
   padding: 9px;
 }
 body.theme-light nav.main li a.nav-link {
@@ -112,8 +158,8 @@ body.theme-light section.main .post-summary .post-summary-bar:hover {
   background-color: #cccccc;
 }
 body.theme-light footer {
-  color: #666666;
-  background-color: #f2f2f2;
+  color: #f2f2f2;
+  background-color: #1f1f1f;
 }
 body.theme-light footer a {
   color: #ffff00;
@@ -167,6 +213,7 @@ body.theme-white footer > div {
 body.theme-white footer .icon {
   background-image: url("/assets/images/airquill-icon-yellow.png");
 }
+/*@justnotwhite: 255 255 255 opacity: 87%*/
 .theme-white {
   color: #ffffff;
 }
@@ -206,17 +253,6 @@ section.post-content p {
 }
 section.post-content blockquote p {
   margin-bottom: 0px;
-}
-div.panel-body.profile {
-  vertical-align: middle;
-}
-img.profile {
-  border: 4px solid #E3E3E3;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  width: 64px;
-  height: 64px;
 }
 a.profile i {
   font-size: 300%;

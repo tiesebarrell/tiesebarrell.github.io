@@ -6,15 +6,28 @@
 		</div>
 
 		<div class="row footer-content">
-			<div class="col">
+			<div class="col-md">
+				<h3>AirQuill</h3>
 				<p>
-					<i class="fas fa-copyright">&nbsp;&nbsp;&nbsp;</i>Copyright &copy; 2014-2019 <a href="/about/">Tiese Barrell</a>. All rights reserved.
+					<i class="fas fa-home">&nbsp;&nbsp;&nbsp;</i><a href="/home/">Home</a>
 				</p>
 				<p>
-					<i class="fas fa-rss-square">&nbsp;&nbsp;&nbsp;</i>Follow posts with <a href="/feed.xml">RSS</a> or <a href="/atom.xml">Atom</a>.
+					<i class="fas fa-edit">&nbsp;&nbsp;&nbsp;</i><a href="/posts/">Posts</a>
 				</p>
 				<p>
-					<i class="fas fa-code">&nbsp;&nbsp;&nbsp;</i>Published using <a href="http://jekyllrb.com">Jekyll</a> (v. {{ jekyll.version }}) on {{site.time | date_to_long_string}}
+					<i class="fas fa-info-circle">&nbsp;&nbsp;&nbsp;</i><a href="/about/">About</a>
+				</p>
+			</div>
+			<div class="col-md">
+				<h3>Resources</h3>
+				<p>
+					<i class="fas fa-copyright">&nbsp;&nbsp;&nbsp;</i>2014-2019 <a href="/about/">Tiese Barrell</a>. All rights reserved.
+				</p>
+				<p title="Follow posts by subscribing to the RSS or Atom feeds">
+					<i class="fas fa-rss-square">&nbsp;&nbsp;&nbsp;</i><a href="/feed.xml">RSS</a> or <a href="/atom.xml">Atom</a>
+				</p>
+				<p title="Published {{site.time | date: '%A, %B %-d, %Y'}} with Jekyll version {{ jekyll.version }}">
+					<i class="fas fa-code">&nbsp;&nbsp;&nbsp;</i>{{site.time | date: "%d-%m-%Y"}} with <a href="http://jekyllrb.com">Jekyll</a>
 				</p>
 			</div>
 		</div>

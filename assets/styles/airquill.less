@@ -15,11 +15,17 @@
 
 @white: #ffffff;
 @yellow: #ffff00;
+
 @grey-light-ultra: #f2f2f2;
 @grey-light: #e6e6e6;
 @grey-middle: #666666;
 @grey-dark: #333333;
+
 @black: #000000;
+@superdark: #202020;
+@nearblack: #1f1f1f;
+
+/*@justnotwhite: 255 255 255 opacity: 87%*/
 
 @logo-light: "/assets/images/airquill-logo-light.png";
 @logo-white: "/assets/images/airquill-logo-white.png";
@@ -53,6 +59,14 @@
 .theme-black {
   color: @black;
 }
+
+
+
+
+
+
+
+
 
 .box-shadow(@style, @c) when (iscolor(@c)) {
   -webkit-box-shadow: @style @c;
@@ -88,18 +102,11 @@ section.post-content blockquote p {
   margin-bottom: 0px;
 }
 
-div.panel-body.profile {
-  vertical-align: middle;
-}
+//div.panel-body.profile {
+//  vertical-align: middle;
+//}
 
-img.profile {
-  border: 4px solid #E3E3E3;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  width: 64px;
-  height: 64px;
-}
+
 
 a.profile i {
   font-size: 300%;

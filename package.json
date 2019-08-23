@@ -7,7 +7,7 @@
   "author": "Tiese Barrell",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.8.2",
-    "@node-minify/cli": "^4.1.0",
+    "@node-minify/cli": "^4.1.2",
     "@node-minify/cssnano": "^4.1.0",
     "@node-minify/uglify-js": "^4.0.5",
     "bootstrap": "^4.3.1",
