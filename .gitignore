@@ -1,5 +1,4 @@
 /_site
 /node_modules
 *.map
-*.min.css
 package-lock.json
