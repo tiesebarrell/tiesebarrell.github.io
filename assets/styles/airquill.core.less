@@ -1,13 +1,13 @@
-/* TODO: needed or just set default differently? */
-.link-style {
-  a:hover {
+.badges {
+  a {
     text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
 nav.main {
-  .link-style();
-
   border-top: 9px solid @yellow;
   min-height: 99px;
 
@@ -38,67 +38,53 @@ nav.main {
 }
 
 main {
+  margin-top: @section-offset * 2;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Gilroy, "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    margin-bottom: 1.5ex;
+  }
+
   p a {
     text-decoration: underline;
   }
 
+  blockquote {
+
+    //TODO
+    //&::before {
+    //  content: "\"";
+    //  font-weight: bolder;
+    //  font-size: 3rem;
+    //  color: @grey-dark;
+    //}
+
+    @media (min-width: 768px) {
+      margin-left: 33px;
+    }
+
+    padding: 2ex 1.5em;
+
+    p {
+      margin: 0;
+    }
+
+   }
+
   img.profile {
     border-width: 4px;
     border-style: solid;
-    margin-left: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
     width: 64px;
     height: 64px;
   }
-}
 
-main.container {
-  margin-top: @section-offset * 2;
-
-  h1 {
-    margin-bottom: 1.5ex;
+  .strike {
+    text-decoration: line-through;
   }
 
-  .about-badges {
-    .link-style();
-    margin-top: 3ex;
-    font-size: 180%;
-    text-align: center;
-  }
-}
-
-section.main {
-  margin-top: @section-offset;
-
-  a {
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .post-summary {
-    margin-bottom: 3ex;
-
-    //.fas {
-    //  font-size: 1.5em;
-    //}
-
-    .post-summary-image {
-      min-height: 15ex;
-      background-repeat: no-repeat;
-    }
-
-    .post-summary-content {
-      padding: 2.5ex 1.5em;
-    }
-
-    .post-summary-bar {
-      height: 3em;
-      line-height: 3em;
-      padding: 0 1.5em;
-    }
-  }
 }
 
 footer {

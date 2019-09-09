@@ -1,0 +1,58 @@
+.box-shadow(@style, @c) when (iscolor(@c)) {
+  -webkit-box-shadow: @style @c;
+  box-shadow:         @style @c;
+}
+.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+}
+.box {
+  color: saturate(@base, 5%);
+  border-color: lighten(@base, 30%);
+  div { .box-shadow(0 0 5px, 30%) }
+}
+
+p.content,
+section.post-content {
+  line-height: 32px;
+  font-size: 110%;
+  font-weight: 300;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+section.post-content {
+  margin-top: 32px;
+  text-align: justify;
+}
+
+section.post-content p {
+  margin-bottom: 32px;
+}
+
+section.post-content blockquote p {
+  margin-bottom: 0px;
+}
+
+a.profile i {
+  font-size: 300%;
+  color: #E3E3E3;
+}
+
+.profile-links {
+  text-align: right;
+}
+
+.container.post p {
+  text-align: justify;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+}
+
+table.light {
+  border-spacing: 10px;
+  border-collapse: separate;
+  td {
+    padding: 10px;
+  }
+}

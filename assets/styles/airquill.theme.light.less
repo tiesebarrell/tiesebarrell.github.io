@@ -10,29 +10,9 @@ body.theme-light {
     img.profile {
       border-color: @grey-light;
     }
-  }
 
-  nav.main {
-    background: url(@square-pattern-dark) repeat;
-    padding: 9px;
-
-    li a.nav-link {
-      color: @grey-dark;
+    blockquote {
       background-color: @grey-light;
-
-      &:hover {
-        background-color: @yellow;
-      }
-    }
-
-    a.logo {
-      background-image: url(@logo-light);
-    }
-  }
-
-  section.main {
-
-    a {
       color: @grey-dark;
     }
 
@@ -54,6 +34,39 @@ body.theme-light {
           background-color: darken(@grey-light-ultra, @post-summary-bar-hover-factor);
         }
       }
+    }
+
+    span.badge {
+      background-color: @grey-light;
+    }
+
+  }
+
+  nav.main {
+    background: url(@square-pattern-dark) repeat;
+    padding: 9px;
+
+    li a.nav-link {
+      color: @grey-dark;
+      background-color: @grey-light;
+
+      &:hover {
+        background-color: @yellow;
+      }
+    }
+
+    a.logo {
+      background-image: url(@logo-light);
+    }
+
+    a {
+      color: @grey-dark;
+    }
+  }
+
+  article {
+    a {
+      color: @nearblack;
     }
   }
 

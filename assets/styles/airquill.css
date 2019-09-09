@@ -13,206 +13,6 @@
 /*!
  * AirQuill v2.0.0 (https://airquill.io/)
  */
-/* TODO: needed or just set default differently? */
-.link-style a:hover {
-  text-decoration: none;
-}
-nav.main {
-  border-top: 9px solid #ffff00;
-  min-height: 99px;
-}
-nav.main a:hover {
-  text-decoration: none;
-}
-nav.main ul.nav {
-  margin-top: 4ex;
-  position: relative;
-}
-nav.main a.nav-link {
-  white-space: nowrap;
-}
-nav.main .dropdown-toggle:after {
-  content: none;
-}
-nav.main .navigation-cell {
-  vertical-align: bottom;
-}
-nav.main a.logo {
-  display: block;
-  height: 93px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-main p a {
-  text-decoration: underline;
-}
-main img.profile {
-  border-width: 4px;
-  border-style: solid;
-  margin-left: 3em;
-  width: 64px;
-  height: 64px;
-}
-main.container {
-  margin-top: 66px;
-}
-main.container h1 {
-  margin-bottom: 1.5ex;
-}
-main.container .about-badges {
-  margin-top: 3ex;
-  font-size: 180%;
-  text-align: center;
-}
-main.container .about-badges a:hover {
-  text-decoration: none;
-}
-section.main {
-  margin-top: 33px;
-}
-section.main a {
-  text-decoration: none;
-}
-section.main a:hover {
-  text-decoration: underline;
-}
-section.main .post-summary {
-  margin-bottom: 3ex;
-}
-section.main .post-summary .post-summary-image {
-  min-height: 15ex;
-  background-repeat: no-repeat;
-}
-section.main .post-summary .post-summary-content {
-  padding: 2.5ex 1.5em;
-}
-section.main .post-summary .post-summary-bar {
-  height: 3em;
-  line-height: 3em;
-  padding: 0 1.5em;
-}
-footer {
-  margin-top: 9ex;
-  border-bottom: 9px solid #ffff00;
-}
-footer h3 {
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-top: 3ex;
-  margin-bottom: 2ex;
-}
-footer a {
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
-}
-footer div.container > div.row:first-of-type {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-}
-footer .icon {
-  min-height: 32px;
-  background-repeat: no-repeat;
-}
-footer .row {
-  padding: 3.33ex 3.33em;
-}
-body.theme-light main {
-  color: #1f1f1f;
-}
-body.theme-light main a {
-  color: #666666;
-}
-body.theme-light main img.profile {
-  border-color: #e6e6e6;
-}
-body.theme-light nav.main {
-  background: url("/assets/images/lifted-square-pattern-dark.png") repeat;
-  padding: 9px;
-}
-body.theme-light nav.main li a.nav-link {
-  color: #333333;
-  background-color: #e6e6e6;
-}
-body.theme-light nav.main li a.nav-link:hover {
-  background-color: #ffff00;
-}
-body.theme-light nav.main a.logo {
-  background-image: url("/assets/images/airquill-logo-light.png");
-}
-body.theme-light section.main a {
-  color: #333333;
-}
-body.theme-light section.main .post-summary .post-summary-content {
-  background-color: #f2f2f2;
-  color: #666666;
-}
-body.theme-light section.main .post-summary .post-summary-content:hover {
-  background-color: #d9d9d9;
-}
-body.theme-light section.main .post-summary .post-summary-bar {
-  background-color: #e5e5e5;
-}
-body.theme-light section.main .post-summary .post-summary-bar:hover {
-  background-color: #cccccc;
-}
-body.theme-light footer {
-  color: #f2f2f2;
-  background-color: #1f1f1f;
-}
-body.theme-light footer a {
-  color: #ffff00;
-}
-body.theme-light footer div.container > div.row:first-of-type {
-  border-bottom-color: #666666;
-}
-body.theme-light footer .icon {
-  background-image: url("/assets/images/airquill-icon-yellow.png");
-}
-body.theme-dark {
-  background-color: #000000;
-}
-body.theme-dark nav.main {
-  background: url("/assets/images/lifted-square-pattern-dark.png") repeat;
-  padding: 9px;
-}
-body.theme-dark nav.main li a.nav-link {
-  color: #666666;
-  background-color: #000000;
-}
-body.theme-dark nav.main li a.nav-link:hover {
-  background-color: #f2f2f2;
-}
-body.theme-dark nav.main a.logo {
-  background-image: url("/assets/images/airquill-logo-dark.png");
-}
-body.theme-white nav.main {
-  background: url("/assets/images/lifted-square-pattern-white.png") repeat;
-}
-body.theme-white nav.main li a.nav-link {
-  color: #e6e6e6;
-  background-color: #ffffff;
-}
-body.theme-white nav.main li a.nav-link:hover {
-  color: #333333;
-}
-body.theme-white nav.main a.logo {
-  background-image: url("/assets/images/airquill-logo-white.png");
-}
-body.theme-white footer {
-  color: #333333;
-  background-color: #f2f2f2;
-}
-body.theme-white footer a {
-  color: #ffff00;
-}
-body.theme-white footer > div {
-  border-bottom-color: #e6e6e6;
-}
-body.theme-white footer .icon {
-  background-image: url("/assets/images/airquill-icon-yellow.png");
-}
 /*@justnotwhite: 255 255 255 opacity: 87%*/
 .theme-white {
   color: #ffffff;
@@ -273,4 +73,260 @@ table.light {
 }
 table.light td {
   padding: 10px;
+}
+@font-face {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/Gilroy/Gilroy-Light.otf) format("truetype");
+}
+@font-face {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  src: url(/assets/fonts/Gilroy/Gilroy-ExtraBold.otf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/assets/fonts/Roboto_Slab/RobotoSlab-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/assets/fonts/Roboto_Slab/RobotoSlab-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 100;
+  src: url(/assets/fonts/Roboto_Slab/RobotoSlab-Thin.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/assets/fonts/Roboto_Slab/RobotoSlab-Bold.ttf) format("truetype");
+}
+.badges a {
+  text-decoration: none;
+}
+.badges a:hover {
+  text-decoration: none;
+}
+nav.main {
+  border-top: 9px solid #ffff00;
+  min-height: 99px;
+}
+nav.main ul.nav {
+  margin-top: 4ex;
+  position: relative;
+}
+nav.main a.nav-link {
+  white-space: nowrap;
+}
+nav.main .dropdown-toggle:after {
+  content: none;
+}
+nav.main .navigation-cell {
+  vertical-align: bottom;
+}
+nav.main a.logo {
+  display: block;
+  height: 93px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main {
+  margin-top: 66px;
+}
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  font-family: Gilroy, "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  margin-bottom: 1.5ex;
+}
+main p a {
+  text-decoration: underline;
+}
+main blockquote {
+  padding: 2ex 1.5em;
+}
+@media (min-width: 768px) {
+  main blockquote {
+    margin-left: 33px;
+  }
+}
+main blockquote p {
+  margin: 0;
+}
+main img.profile {
+  border-width: 4px;
+  border-style: solid;
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 64px;
+  height: 64px;
+}
+main .strike {
+  text-decoration: line-through;
+}
+footer {
+  margin-top: 9ex;
+  border-bottom: 9px solid #ffff00;
+}
+footer h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 3ex;
+  margin-bottom: 2ex;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer div.container > div.row:first-of-type {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+footer .icon {
+  min-height: 32px;
+  background-repeat: no-repeat;
+}
+footer .row {
+  padding: 3.33ex 3.33em;
+}
+main .post-summary {
+  margin-bottom: 3ex;
+}
+main .post-summary .post-summary-image {
+  min-height: 15ex;
+  background-repeat: no-repeat;
+}
+main .post-summary .post-summary-content {
+  padding: 2.5ex 1.5em;
+}
+main .post-summary .post-summary-content p {
+  font-family: "Gilroy", "Helvetica Neue", sans-serif;
+}
+main .post-summary .post-summary-bar {
+  height: 3em;
+  line-height: 3em;
+  padding: 0 1.5em;
+}
+article {
+  font-family: "Roboto Slab", serif;
+  font-size: 115%;
+  font-weight: lighter;
+}
+article p {
+  text-align: justify;
+}
+article p.post-image {
+  text-align: center;
+}
+article img.header {
+  max-width: 100%;
+  max-height: 333px;
+}
+article .post-info {
+  font-family: Gilroy, "Helvetica Neue", sans-serif;
+}
+main .about-badges {
+  margin-top: 3ex;
+  font-size: 180%;
+  text-align: center;
+}
+main .about-badges a {
+  text-decoration: none;
+}
+main .about-badges a:hover {
+  text-decoration: none;
+}
+body.theme-light main {
+  color: #1f1f1f;
+}
+body.theme-light main a {
+  color: #666666;
+}
+body.theme-light main img.profile {
+  border-color: #e6e6e6;
+}
+body.theme-light main blockquote {
+  background-color: #e6e6e6;
+  color: #333333;
+}
+body.theme-light main .post-summary .post-summary-content {
+  background-color: #f2f2f2;
+  color: #666666;
+}
+body.theme-light main .post-summary .post-summary-content:hover {
+  background-color: #d9d9d9;
+}
+body.theme-light main .post-summary .post-summary-bar {
+  background-color: #e5e5e5;
+}
+body.theme-light main .post-summary .post-summary-bar:hover {
+  background-color: #cccccc;
+}
+body.theme-light main span.badge {
+  background-color: #e6e6e6;
+}
+body.theme-light nav.main {
+  background: url("/assets/images/lifted-square-pattern-dark.png") repeat;
+  padding: 9px;
+}
+body.theme-light nav.main li a.nav-link {
+  color: #333333;
+  background-color: #e6e6e6;
+}
+body.theme-light nav.main li a.nav-link:hover {
+  background-color: #ffff00;
+}
+body.theme-light nav.main a.logo {
+  background-image: url("/assets/images/airquill-logo-light.png");
+}
+body.theme-light nav.main a {
+  color: #333333;
+}
+body.theme-light article a {
+  color: #1f1f1f;
+}
+body.theme-light footer {
+  color: #f2f2f2;
+  background-color: #1f1f1f;
+}
+body.theme-light footer a {
+  color: #ffff00;
+}
+body.theme-light footer div.container > div.row:first-of-type {
+  border-bottom-color: #666666;
+}
+body.theme-light footer .icon {
+  background-image: url("/assets/images/airquill-icon-yellow.png");
+}
+body.theme-dark {
+  background-color: #000000;
+}
+body.theme-dark nav.main {
+  background: url("/assets/images/lifted-square-pattern-dark.png") repeat;
+  padding: 9px;
+}
+body.theme-dark nav.main li a.nav-link {
+  color: #666666;
+  background-color: #000000;
+}
+body.theme-dark nav.main li a.nav-link:hover {
+  background-color: #f2f2f2;
+}
+body.theme-dark nav.main a.logo {
+  background-image: url("/assets/images/airquill-logo-dark.png");
 }

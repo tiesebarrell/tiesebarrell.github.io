@@ -1,172 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: airquill
+---
+<article class="row post-content">
 
-	{% include head.html %}
+	<div class="col-lg-9">
 
-	<body class="theme-light">
+		<h1>{{ page.title }}</h1>
 
-		{% include header.html %}
+		<p class="small post-info">
+			<i class="fas fa-calendar-day">&nbsp;</i> {{page.date | date_to_long_string }}
+			{% if page.location %} | <i class="fas fa-map-marker">&nbsp;</i>{{ page.location }} {% endif %}
+			{% if page.tldr %}
+			| <i class="fas fa-clock">&nbsp;</i>
+			<a href="#tldr">
+				TL;DR
+			</a>
+			{% endif %}
+		</p>
 
-		<section class="container main">
+		<p class="post-image">
+			<img class="header" src="{{ page.image.url }}" title="{{ page.image.title }}" />
+		</p>
 
-			<div class="row">
-				<div class="col-md-12">
-					<h1>{{ page.title }}</h1>
-				</div>
+		{{ content }}
+
+		<hr />
+
+	</div>
+
+	<div class="col-lg-3">
+		&nbsp;
+	</div>
+
+</article>
+
+<section class="row article-signature">
+	<div class="col-lg-9">
+		<div class="media">
+			<a class="pull-left" href="/about.html">
+				<img class="media-object profile" src="/assets/images/profile-picture.jpg" alt="Tiese Barrell" />
+			</a>
+			<div class="media-body profile">
+				<h4 class="media-heading">
+					Tiese Barrell&nbsp;
+					<span class="badges">
+						<a href="https://twitter.com/tiesebarrell">
+							<i class="fab fa-twitter-square"></i>
+						</a>
+						&nbsp;
+						<a href="http://mazidea.com">
+							<i class="fas fa-link"></i>
+						</a>
+					</span>
+				</h4>
+				<p>I should write something <span class="strike">funny</span> profound here.</p>
 			</div>
-			
-			<div class="row">
-				<div class="col-md-12">
-					<p class="small">
-						Posted {{page.date | date_to_long_string }} {% if page.location %} | <i class="fas fa-map-marker">&nbsp;</i>{{ page.location }} {% endif %} | {{ page.content | number_of_words }} words
-					</p>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-md-7">
+		</div>
 
-					<section class="post-content">
+		<hr />
 
-						<img src="{{ page.image.url }}" title="{{ page.image.title }}" />
+		<p>
+			<i class="fas fa-pen-square">&nbsp;</i> {{ page.content | number_of_words }} words <br />
 
-						{{ content }}
+			<i class="fas fa-tags">&nbsp;</i>Posted in
+			{% for tag in page.tags %}
+			<a href="/tag/{{tag}}" title="Posts with tag {{tag}}">{{tag}}</a>&nbsp;
+			{% endfor %}
+			<br />
+
+			<i class="fas fa-share-square">&nbsp;</i>Share&nbsp;
+			<span class="badges">
+				<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url}}{{ page.url }}&amp;title={{ page.title }}&amp;summary=Put your summary here" target="_blank">
+					<i class="fab fa-linkedin">&nbsp;</i>
+				</a>
+				<a href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}" target="_blank">
+					<i class="fab fa-twitter-square">&nbsp;</i>
+				</a>
+				<a href="{{page.url}}" title="Permalink to this post">
+					<i class="fas fa-link">&nbsp;</i>
+				</a>
+			</span>
+		</p>
 
 
+	</div>
+	<div class="col-lg-3">
+		&nbsp;
+	</div>
+</section>
 
-						{% if page.tldr %}
-						<a id="tldr"></a>
-						<div class="panel panel-primary">
-  							<div class="panel-heading">
-    							<h3 class="panel-title"><i class="fa fa-coffee">&nbsp;</i>TL;DR</h3>
-  							</div>
-  							<div class="panel-body">
-    							{{page.tldr | markdownify}}
-  							</div>
-						</div>
-						{% endif %}
-					</section>
+{% if page.tldr %}
+<section class="row tldr">
+	<div class="col-lg-9">
 
-					<div class="panel panel-primary">
-  						<div class="panel-body profile">
-							<div class="row">
-  								<div class="col-md-7">
-									<div class="media">
-  										<a class="pull-left" href="/about.html">
-    										<img class="media-object profile" src="/assets/images/profile-picture.jpg" alt="Tiese Barrell" />
-  										</a>
-  										<div class="media-body profile">
-  											<h4 class="media-heading">Tiese Barrell</h4>
-  											<p>I should write something funny here.</p>
-  										</div>
-  									</div>
-  								</div>
-  								<div class="col-md-1">
-  								</div>
-  								<div class="col-md-4 profile-links">
-  									<a class="profile" href="https://twitter.com/tiesebarrell">
-  										<i class="fa fa-twitter"></i>
-  									</a>
-  									&nbsp;
-  									<a class="profile" href="http://mazidea.com">
-  										<i class="fa fa-globe"></i>
-  									</a>
-  								</div>
-							</div>
-						</div>
-					</div>
+		<hr />
 
-				</div>
-				<div class="col-md-1">
-				</div>
-				<div class="col-md-4">
-					<div class="panel panel-primary">
-					  	<div class="panel-body">
-							{% if page.tldr %}
-							<div class="row">
-								<div class="col-md-12">
-									<h4>
-										<i class="fa fa-coffee">&nbsp;</i>TL;DR
-									</h4>
+		<a id="tldr"></a>
+		<h2><i class="fa fa-coffee">&nbsp;</i>TL;DR</h2>
+		{{page.tldr | markdownify}}
+	</div>
+	<div class="col-lg-3">
+		&nbsp;
+	</div>
+</section>
+{% endif %}
 
-									{{page.excerpt | markdownify }}
-
-									<p>
-										<a href="#tldr" class="">
-											<i class="fa fa-coffee">&nbsp;</i>TL;DR
-										</a>
-									</p>
-								</div>
-							</div>
-
-							<hr />
-
-							{% endif %}
-
-					    	<div class="row">
-								<div class="col-md-12">
-									<h4>
-										<i class="fa fa-tags">&nbsp;</i>Tags
-									</h4>
-									{% for tag in page.tags %}
-										<a href="/tag/{{tag}}" title="Posts with tag {{tag}}">{{tag}}</a>&nbsp;
-									{% endfor %}
-								</div>
-							</div>
-
-							<hr />
-							
-							<div class="row">
-								<div class="col-md-12">
-									<h4>
-										<i class="fa fa-cloud">&nbsp;</i>Links
-									</h4>
-									<ul>
-										<li>
-											<a href="{{page.url}}">Permalink to this post</a>
-										</li>
-									{% if page.links %}
-										{% for link in page.links %}
-											<li>
-												<a href="{{link.link}}">{{ link.name }}</a>
-											</li>
-										{% endfor %}
-									{% endif %}
-								</div>
-							</div>
-							
-							<hr />
-
-							<div class="row">
-								<div class="col-md-12">
-									<h4>
-										<i class="fa fa-share-alt">&nbsp;</i>Share
-									</h4>
-
-									<div class="btn-group btn-group-justified">
-										<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url}}{{ page.url }}&amp;title={{ page.title }}&amp;summary=Put your summary here" target="_blank" class="btn btn-primary btn-block">
-											<i class="fa fa-linkedin">&nbsp;</i>
-										</a>
-										<a href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}" target="_blank" class="btn btn-primary btn-block">
-											<i class="fa fa-twitter">&nbsp;</i>
-										</a>
-										<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank" class="btn btn-primary btn-block">
-											<i class="fa fa-google-plus">&nbsp;</i>
-										</a>
-									</div>
-								</div>
-							</div>
-					  	</div>
-					</div>
-				</div>
-			</div>
-		
-		</section>
-
-		{% include footer.html %}
-		
-		{% include foot.html %}
-
-	</body>
-
-</html>
+{% if page.links %}
+<section class="row">
+	<div class="col-lg-9">
+		<hr />
+		<h2>Links</h2>
+		<ul>
+			{% for link in page.links %}
+			<li>
+				<a href="{{link.link}}">{{ link.name }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="col-lg-3">
+		&nbsp;
+	</div>
+</section>
+{% endif %}
