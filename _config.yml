@@ -22,7 +22,7 @@ kramdown:
   parse_block_html: true
 
 exclude: [
-  "assets/styles/airquill.less",
+  "assets/styles/*.less",
   "assets/styles/airquill.css",
   "assets/javascript/airquill.js",
   "assets/javascript/airquill-core.js",
