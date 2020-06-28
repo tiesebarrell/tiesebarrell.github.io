@@ -4,6 +4,7 @@ title: Need something? Contribute it yourself!
 redirect_from:
  - /2014/05/06/Need-something-contribute-it.html
 tags: [activiti, bpm, oss]
+categories: group9
 location: Eindhoven
 ---
 

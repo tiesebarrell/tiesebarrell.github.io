@@ -4,6 +4,7 @@ title: Storing data in automated business processes
 redirect_from:
  - /2014/06/29/Storing-data-in-processes.html
 tags: [activiti, bpm, architecture]
+categories: group9
 location: Eindhoven
 ---
 If you are automating business processes, you need to store data. But you shouldn't store complex data in your process engine. That data should live elsewhere.

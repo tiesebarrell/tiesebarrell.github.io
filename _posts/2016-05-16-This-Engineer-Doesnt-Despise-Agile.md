@@ -7,6 +7,7 @@ links:
  - link: https://age-of-product.com/engineers-despise-agile/
    name: Why Engineers Despise Agile
 tags: [agile,tech]
+categories: group9
 image: 
   url: "/assets/images/posts/balance.jpg"
   title: "Balance"

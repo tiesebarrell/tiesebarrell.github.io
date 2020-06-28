@@ -7,6 +7,7 @@ links:
  - link: /2014/06/29/storing-data-in-processes
    name: Storing data in automated business processes
 tags: [architecture,bpm]
+categories: group9
 location: Heerlen
 excerpt: Your process engine [may not need your data](/2014/06/29/storing-data-in-processes), but the orchestration it's performing might.
 tldr: Some data is only available in your process because the orchestration has taken place. This includes information that was taken into account while performing the execution and has no history and therefore cannot be retrieved in retrospect. In such cases the data should be stored in the process engine's data storage.

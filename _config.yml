@@ -1,7 +1,7 @@
-url: http://airquill.io
+url: https://airquill.io
 name: AirQuill
 authorName: Tiese Barrell
-authorEmail: info@mazidea.com
+authorEmail: tiesebarrell@mazidea.com
 
 markdown: kramdown
 highlighter: rouge

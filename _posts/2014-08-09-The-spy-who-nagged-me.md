@@ -4,6 +4,7 @@ title: The spy who nagged me
 redirect_from:
  - /2014/08/09/The-spy-who-nagged-me.html
 tags: [mockito, activiti]
+categories: group9
 links: 
  - link: https://code.google.com/p/mockito/
    name: Mockito

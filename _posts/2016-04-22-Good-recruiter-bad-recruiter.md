@@ -4,6 +4,7 @@ title: Good Recruiter, Bad Recruiter
 redirect_from:
  - /2016/04/22/Good-recruiter-bad-recruiter.html
 tags: [misc]
+categories: group9
 image: 
   url: "/assets/images/posts/word-cloud-recruitment.jpg"
   title: "Recruitment"

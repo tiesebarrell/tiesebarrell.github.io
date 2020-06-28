@@ -7,6 +7,7 @@ links:
  - link: /2014/06/29/storing-data-in-processes
    name: Storing data in automated business processes
 tags: [bpm]
+categories: group9
 image: 
   url: "/assets/images/posts/start-end.jpg"
   title: "Getting the start and end right"

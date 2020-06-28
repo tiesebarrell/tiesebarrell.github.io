@@ -7,6 +7,7 @@ links:
  - link: /2015/12/06/all-beginnings-are-hard
    name: All Beginnings are Hard
 tags: [agile,bpm]
+categories: group9
 image: 
   url: "/assets/images/posts/pushpins-and-threads.jpg"
   title: "Determining intent"

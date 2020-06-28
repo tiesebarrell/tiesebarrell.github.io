@@ -1,7 +1,8 @@
 ---
 layout: post
-title: There is no execution model
+title: There is No Execution Model
 tags: [bpm]
+categories: group9
 image:
   url: "/assets/images/posts/process-automation.jpg"
   title: "Executable model"
